@@ -1,0 +1,3305 @@
+{
+  "configuration" : { },
+  "description" : "Medpoint is a platform to reserve a doctor's appointment",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-ui",
+  "lastModifiedDate" : "2025-03-30T09:40:13Z",
+  "model" : {
+    "people" : [ {
+      "description" : "Uses the mobile app to book an appointment, view appointment details, and receive notifications.",
+      "id" : "217",
+      "location" : "Unspecified",
+      "name" : "Patient",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ppatient"
+      },
+      "relationships" : [ {
+        "description" : "Patient can login into mobile app using email.",
+        "destinationId" : "155",
+        "id" : "218",
+        "sourceId" : "217",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Patient can login into mobile app using email.",
+        "destinationId" : "154",
+        "id" : "219",
+        "linkedRelationshipId" : "218",
+        "sourceId" : "217"
+      }, {
+        "description" : "Patient can login into mobile app using email.",
+        "destinationId" : "4",
+        "id" : "220",
+        "linkedRelationshipId" : "218",
+        "sourceId" : "217"
+      }, {
+        "description" : "Patient must Register if patient is not registered in the system.",
+        "destinationId" : "168",
+        "id" : "221",
+        "sourceId" : "217",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Patient can manage and update profile.",
+        "destinationId" : "164",
+        "id" : "222",
+        "sourceId" : "217",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Patient can search health services by keyword.",
+        "destinationId" : "176",
+        "id" : "223",
+        "sourceId" : "217",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Patient can create reservation, cancel reservation, and receive notifications.",
+        "destinationId" : "172",
+        "id" : "224",
+        "sourceId" : "217",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Patient can make payment.",
+        "destinationId" : "160",
+        "id" : "225",
+        "sourceId" : "217",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "Uses the Web CMS app to manage all master data and user access rights",
+      "id" : "226",
+      "location" : "Unspecified",
+      "name" : "Super Admin",
+      "properties" : {
+        "structurizr.dsl.identifier" : "psuperadmin"
+      },
+      "relationships" : [ {
+        "description" : "Super Admin can login into Web CMS app using email.",
+        "destinationId" : "194",
+        "id" : "227",
+        "sourceId" : "226",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Super Admin can login into Web CMS app using email.",
+        "destinationId" : "180",
+        "id" : "228",
+        "linkedRelationshipId" : "227",
+        "sourceId" : "226"
+      }, {
+        "description" : "Super Admin can login into Web CMS app using email.",
+        "destinationId" : "4",
+        "id" : "229",
+        "linkedRelationshipId" : "227",
+        "sourceId" : "226"
+      }, {
+        "destinationId" : "214",
+        "id" : "230",
+        "sourceId" : "226",
+        "tags" : "Relationship"
+      }, {
+        "destinationId" : "186",
+        "id" : "231",
+        "sourceId" : "226",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Super Admin can manage reservation slot",
+        "destinationId" : "206",
+        "id" : "232",
+        "sourceId" : "226",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Super Admin can manage CRUD Faskes Data Master",
+        "destinationId" : "190",
+        "id" : "233",
+        "sourceId" : "226",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Super Admin can manage CRUD Poli Data Master",
+        "destinationId" : "202",
+        "id" : "234",
+        "sourceId" : "226",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Super Admin can manage CRUD Services Data Master",
+        "destinationId" : "210",
+        "id" : "235",
+        "sourceId" : "226",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Super Admin can manage CRUD Address Data Master",
+        "destinationId" : "181",
+        "id" : "236",
+        "sourceId" : "226",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "Uses the Web CMS app to manage master data, schedules, reservation slots and payments",
+      "id" : "237",
+      "location" : "Unspecified",
+      "name" : "Admin",
+      "properties" : {
+        "structurizr.dsl.identifier" : "padmin"
+      },
+      "relationships" : [ {
+        "description" : "Admin can login into Web CMS app using email.",
+        "destinationId" : "194",
+        "id" : "238",
+        "sourceId" : "237",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Admin can login into Web CMS app using email.",
+        "destinationId" : "180",
+        "id" : "239",
+        "linkedRelationshipId" : "238",
+        "sourceId" : "237"
+      }, {
+        "description" : "Admin can login into Web CMS app using email.",
+        "destinationId" : "4",
+        "id" : "240",
+        "linkedRelationshipId" : "238",
+        "sourceId" : "237"
+      }, {
+        "description" : "Admin can manage user's data",
+        "destinationId" : "214",
+        "id" : "241",
+        "sourceId" : "237",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Admin can manage reservation slot",
+        "destinationId" : "206",
+        "id" : "242",
+        "sourceId" : "237",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Admin can manage Faskes Data Master",
+        "destinationId" : "190",
+        "id" : "243",
+        "sourceId" : "237",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Admin can manage Poli Data Master",
+        "destinationId" : "202",
+        "id" : "244",
+        "sourceId" : "237",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Admin can manage Services Data Master",
+        "destinationId" : "210",
+        "id" : "245",
+        "sourceId" : "237",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Admin can manage Address Data Master",
+        "destinationId" : "181",
+        "id" : "246",
+        "sourceId" : "237",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Admin can see Billing and payment validation",
+        "destinationId" : "198",
+        "id" : "247",
+        "sourceId" : "237",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "Uses the Web CMS app to providing reservation slots, approving reservations, providing consultations and prescriptions.",
+      "id" : "248",
+      "location" : "Unspecified",
+      "name" : "Doctor",
+      "properties" : {
+        "structurizr.dsl.identifier" : "pdoctor"
+      },
+      "relationships" : [ {
+        "description" : "Doctor can login into Web CMS app using email.",
+        "destinationId" : "194",
+        "id" : "249",
+        "sourceId" : "248",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Doctor can login into Web CMS app using email.",
+        "destinationId" : "180",
+        "id" : "250",
+        "linkedRelationshipId" : "249",
+        "sourceId" : "248"
+      }, {
+        "description" : "Doctor can login into Web CMS app using email.",
+        "destinationId" : "4",
+        "id" : "251",
+        "linkedRelationshipId" : "249",
+        "sourceId" : "248"
+      }, {
+        "description" : "Doctor can providing reservation slots, approving reservations",
+        "destinationId" : "206",
+        "id" : "252",
+        "sourceId" : "248",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "description" : "External IDP (Google/Apple/Meta/Twillio/Mailgun)",
+      "documentation" : { },
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "External Auth",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ssexternalauth"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "description" : "External Payment (BRI)",
+      "documentation" : { },
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "External Payment",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ssexternalpayment"
+      },
+      "tags" : "Element,Software System"
+    }, {
+      "description" : "External Messaging (Twillio/Mailgun/FCM)",
+      "documentation" : { },
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "External Messaging",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ssexternalmessaging"
+      },
+      "relationships" : [ {
+        "description" : "Send push notifications to",
+        "destinationId" : "217",
+        "id" : "253",
+        "sourceId" : "3",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Send push notifications to",
+        "destinationId" : "226",
+        "id" : "254",
+        "sourceId" : "3",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Send push notifications to",
+        "destinationId" : "237",
+        "id" : "255",
+        "sourceId" : "3",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Send push notifications to",
+        "destinationId" : "248",
+        "id" : "256",
+        "sourceId" : "3",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "containers" : [ {
+        "components" : [ {
+          "description" : "Stores address data.",
+          "documentation" : { },
+          "id" : "6",
+          "name" : "address",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comdatabaseaddresstable"
+          },
+          "tags" : "Element,Component,Database",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores faskes data.",
+          "documentation" : { },
+          "id" : "7",
+          "name" : "faskes",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comdatabasefaskestable"
+          },
+          "tags" : "Element,Component,Database",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores poli data.",
+          "documentation" : { },
+          "id" : "8",
+          "name" : "poli",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comdatabasepolitable"
+          },
+          "tags" : "Element,Component,Database",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores reservation data.",
+          "documentation" : { },
+          "id" : "9",
+          "name" : "reservations",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comdatabasereservationtable"
+          },
+          "tags" : "Element,Component,Database",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores health services data.",
+          "documentation" : { },
+          "id" : "10",
+          "name" : "services",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comdatabaseservicestable"
+          },
+          "tags" : "Element,Component,Database",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores transaction data.",
+          "documentation" : { },
+          "id" : "11",
+          "name" : "transactions",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comdatabasetransactiontable"
+          },
+          "tags" : "Element,Component,Database",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores users data.",
+          "documentation" : { },
+          "id" : "12",
+          "name" : "users",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comdatabaseusertable"
+          },
+          "tags" : "Element,Component,Database",
+          "technology" : "PostgreSQL"
+        } ],
+        "description" : "Stores all data for the application.",
+        "documentation" : { },
+        "id" : "5",
+        "name" : "Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cdatabase"
+        },
+        "tags" : "Element,Container,Database",
+        "technology" : "PostgreSQL"
+      }, {
+        "components" : [ {
+          "description" : "Handle /login/email",
+          "documentation" : { },
+          "id" : "14",
+          "name" : "Auth Email Login",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comauthemaillogin"
+          },
+          "relationships" : [ {
+            "description" : "Check if user's email exists",
+            "destinationId" : "12",
+            "id" : "15",
+            "sourceId" : "14",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Check if user's email exists",
+            "destinationId" : "5",
+            "id" : "16",
+            "linkedRelationshipId" : "15",
+            "sourceId" : "14"
+          }, {
+            "description" : "Initiate Username/Password auth flow",
+            "destinationId" : "1",
+            "id" : "19",
+            "sourceId" : "14",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "description" : "Handle /register",
+          "documentation" : { },
+          "id" : "22",
+          "name" : "Auth Email Register",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comauthemailregister"
+          },
+          "relationships" : [ {
+            "description" : "Check if user's email exists",
+            "destinationId" : "12",
+            "id" : "23",
+            "sourceId" : "22",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Check if user's email exists",
+            "destinationId" : "5",
+            "id" : "24",
+            "linkedRelationshipId" : "23",
+            "sourceId" : "22"
+          } ],
+          "tags" : "Element,Component"
+        } ],
+        "description" : "Backend to handle authn/authz",
+        "documentation" : { },
+        "id" : "13",
+        "name" : "Supabase Auth service",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cauth"
+        },
+        "relationships" : [ {
+          "description" : "Check if user's email exists",
+          "destinationId" : "12",
+          "id" : "17",
+          "linkedRelationshipId" : "15",
+          "sourceId" : "13"
+        }, {
+          "description" : "Check if user's email exists",
+          "destinationId" : "5",
+          "id" : "18",
+          "linkedRelationshipId" : "15",
+          "sourceId" : "13"
+        }, {
+          "description" : "Initiate Username/Password auth flow",
+          "destinationId" : "1",
+          "id" : "20",
+          "linkedRelationshipId" : "19",
+          "sourceId" : "13"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Supabase"
+      }, {
+        "components" : [ {
+          "description" : "Handle /login/email",
+          "documentation" : { },
+          "id" : "26",
+          "name" : "Auth Email Login Internal",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comauthemaillogininternal"
+          },
+          "relationships" : [ {
+            "description" : "Check if user's email exists",
+            "destinationId" : "12",
+            "id" : "27",
+            "sourceId" : "26",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Check if user's email exists",
+            "destinationId" : "5",
+            "id" : "28",
+            "linkedRelationshipId" : "27",
+            "sourceId" : "26"
+          } ],
+          "tags" : "Element,Component"
+        } ],
+        "description" : "Backend to handle authn/authz",
+        "documentation" : { },
+        "id" : "25",
+        "name" : "Supabase Auth service internal",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cauthinternal"
+        },
+        "relationships" : [ {
+          "description" : "Check if user's email exists",
+          "destinationId" : "12",
+          "id" : "29",
+          "linkedRelationshipId" : "27",
+          "sourceId" : "25"
+        }, {
+          "description" : "Check if user's email exists",
+          "destinationId" : "5",
+          "id" : "30",
+          "linkedRelationshipId" : "27",
+          "sourceId" : "25"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Supabase"
+      }, {
+        "components" : [ {
+          "description" : "Handle /api/v1/address",
+          "documentation" : { },
+          "id" : "32",
+          "name" : "Address RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comrestaddress"
+          },
+          "relationships" : [ {
+            "description" : "Manage address master data",
+            "destinationId" : "6",
+            "id" : "33",
+            "sourceId" : "32",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage address master data",
+            "destinationId" : "5",
+            "id" : "34",
+            "linkedRelationshipId" : "33",
+            "sourceId" : "32"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        }, {
+          "description" : "Handle /api/v1/faskes",
+          "documentation" : { },
+          "id" : "37",
+          "name" : "Faskes RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comrestfaskes"
+          },
+          "relationships" : [ {
+            "description" : "Manage faskes master data",
+            "destinationId" : "7",
+            "id" : "38",
+            "sourceId" : "37",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage faskes master data",
+            "destinationId" : "5",
+            "id" : "39",
+            "linkedRelationshipId" : "38",
+            "sourceId" : "37"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        }, {
+          "description" : "Handle /api/v1/payment",
+          "documentation" : { },
+          "id" : "41",
+          "name" : "Payment RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comrestpayment"
+          },
+          "relationships" : [ {
+            "destinationId" : "9",
+            "id" : "42",
+            "sourceId" : "41",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "5",
+            "id" : "43",
+            "linkedRelationshipId" : "42",
+            "sourceId" : "41"
+          }, {
+            "description" : "Make payments to external",
+            "destinationId" : "2",
+            "id" : "45",
+            "sourceId" : "41",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Call notification if success payments and write data reservation to database",
+            "destinationId" : "3",
+            "id" : "48",
+            "sourceId" : "41",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        }, {
+          "description" : "Handle /api/v1/poli",
+          "documentation" : { },
+          "id" : "51",
+          "name" : "Poli RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comrestpoli"
+          },
+          "relationships" : [ {
+            "description" : "Manage poli master data",
+            "destinationId" : "8",
+            "id" : "52",
+            "sourceId" : "51",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage poli master data",
+            "destinationId" : "5",
+            "id" : "53",
+            "linkedRelationshipId" : "52",
+            "sourceId" : "51"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        }, {
+          "description" : "Handle /api/v1/profile",
+          "documentation" : { },
+          "id" : "55",
+          "name" : "Profile RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comrestprofile"
+          },
+          "relationships" : [ {
+            "description" : "Manage user's data",
+            "destinationId" : "12",
+            "id" : "56",
+            "sourceId" : "55",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage user's data",
+            "destinationId" : "5",
+            "id" : "57",
+            "linkedRelationshipId" : "56",
+            "sourceId" : "55"
+          }, {
+            "description" : "Send notifications using",
+            "destinationId" : "3",
+            "id" : "59",
+            "sourceId" : "55",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        }, {
+          "description" : "Handle /api/v1/reservation",
+          "documentation" : { },
+          "id" : "60",
+          "name" : "Reservation RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comrestreservation"
+          },
+          "relationships" : [ {
+            "description" : "Manage data reservations",
+            "destinationId" : "9",
+            "id" : "61",
+            "sourceId" : "60",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage data reservations",
+            "destinationId" : "5",
+            "id" : "62",
+            "linkedRelationshipId" : "61",
+            "sourceId" : "60"
+          }, {
+            "description" : "Call notification if success/cancelled reservation",
+            "destinationId" : "3",
+            "id" : "63",
+            "sourceId" : "60",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Make payments to external",
+            "destinationId" : "2",
+            "id" : "64",
+            "sourceId" : "60",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        }, {
+          "description" : "Handle /api/v1/services",
+          "documentation" : { },
+          "id" : "65",
+          "name" : "Services RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comrestservices"
+          },
+          "relationships" : [ {
+            "description" : "Manage data health services",
+            "destinationId" : "10",
+            "id" : "66",
+            "sourceId" : "65",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage data health services",
+            "destinationId" : "5",
+            "id" : "67",
+            "linkedRelationshipId" : "66",
+            "sourceId" : "65"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        }, {
+          "description" : "Handle /api/v1/transaction",
+          "documentation" : { },
+          "id" : "69",
+          "name" : "Transaction RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comresttransaction"
+          },
+          "relationships" : [ {
+            "description" : "Manage data transaction",
+            "destinationId" : "11",
+            "id" : "70",
+            "sourceId" : "69",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage data transaction",
+            "destinationId" : "5",
+            "id" : "71",
+            "linkedRelationshipId" : "70",
+            "sourceId" : "69"
+          }, {
+            "destinationId" : "41",
+            "id" : "73",
+            "sourceId" : "69",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Call notification if success payments and write data transaction to database",
+            "destinationId" : "3",
+            "id" : "74",
+            "sourceId" : "69",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Make payments to external",
+            "destinationId" : "2",
+            "id" : "75",
+            "sourceId" : "69",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        }, {
+          "description" : "Handle /api/v1/users",
+          "documentation" : { },
+          "id" : "76",
+          "name" : "User RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comrestuser"
+          },
+          "relationships" : [ {
+            "description" : "Manage user's data",
+            "destinationId" : "12",
+            "id" : "77",
+            "sourceId" : "76",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage user's data",
+            "destinationId" : "5",
+            "id" : "78",
+            "linkedRelationshipId" : "77",
+            "sourceId" : "76"
+          }, {
+            "description" : "Billing and making payments, payment validation",
+            "destinationId" : "2",
+            "id" : "79",
+            "sourceId" : "76",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Allow to recieves and read notifications",
+            "destinationId" : "3",
+            "id" : "80",
+            "sourceId" : "76",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Supabase"
+        } ],
+        "description" : "Backend to handle REST",
+        "documentation" : { },
+        "id" : "31",
+        "name" : "PostgreSQL REST Service",
+        "properties" : {
+          "structurizr.dsl.identifier" : "crest"
+        },
+        "relationships" : [ {
+          "description" : "Manage address master data",
+          "destinationId" : "6",
+          "id" : "35",
+          "linkedRelationshipId" : "33",
+          "sourceId" : "31"
+        }, {
+          "description" : "Manage address master data",
+          "destinationId" : "5",
+          "id" : "36",
+          "linkedRelationshipId" : "33",
+          "sourceId" : "31"
+        }, {
+          "description" : "Manage faskes master data",
+          "destinationId" : "7",
+          "id" : "40",
+          "linkedRelationshipId" : "38",
+          "sourceId" : "31"
+        }, {
+          "destinationId" : "9",
+          "id" : "44",
+          "linkedRelationshipId" : "42",
+          "sourceId" : "31"
+        }, {
+          "description" : "Make payments to external",
+          "destinationId" : "2",
+          "id" : "46",
+          "linkedRelationshipId" : "45",
+          "sourceId" : "31"
+        }, {
+          "description" : "Call notification if success payments and write data reservation to database",
+          "destinationId" : "3",
+          "id" : "49",
+          "linkedRelationshipId" : "48",
+          "sourceId" : "31"
+        }, {
+          "description" : "Manage poli master data",
+          "destinationId" : "8",
+          "id" : "54",
+          "linkedRelationshipId" : "52",
+          "sourceId" : "31"
+        }, {
+          "description" : "Manage user's data",
+          "destinationId" : "12",
+          "id" : "58",
+          "linkedRelationshipId" : "56",
+          "sourceId" : "31"
+        }, {
+          "description" : "Manage data health services",
+          "destinationId" : "10",
+          "id" : "68",
+          "linkedRelationshipId" : "66",
+          "sourceId" : "31"
+        }, {
+          "description" : "Manage data transaction",
+          "destinationId" : "11",
+          "id" : "72",
+          "linkedRelationshipId" : "70",
+          "sourceId" : "31"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Supabase"
+      }, {
+        "components" : [ {
+          "description" : "Handle /auth",
+          "documentation" : { },
+          "id" : "82",
+          "name" : "Bff mobile Auth",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffmobileauth"
+          },
+          "relationships" : [ {
+            "description" : "Call login with email endpoint",
+            "destinationId" : "14",
+            "id" : "83",
+            "sourceId" : "82",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Call login with email endpoint",
+            "destinationId" : "13",
+            "id" : "84",
+            "linkedRelationshipId" : "83",
+            "sourceId" : "82"
+          }, {
+            "description" : "Get user",
+            "destinationId" : "76",
+            "id" : "87",
+            "sourceId" : "82",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Get user",
+            "destinationId" : "31",
+            "id" : "88",
+            "linkedRelationshipId" : "87",
+            "sourceId" : "82"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden with Go"
+        }, {
+          "description" : "Handle /payment",
+          "documentation" : { },
+          "id" : "91",
+          "name" : "Bff mobile Payment",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffmobilepayment"
+          },
+          "relationships" : [ {
+            "description" : "Retrieving billing data from database",
+            "destinationId" : "69",
+            "id" : "92",
+            "sourceId" : "91",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Retrieving billing data from database",
+            "destinationId" : "31",
+            "id" : "93",
+            "linkedRelationshipId" : "92",
+            "sourceId" : "91"
+          }, {
+            "destinationId" : "41",
+            "id" : "95",
+            "sourceId" : "91",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /profile",
+          "documentation" : { },
+          "id" : "97",
+          "name" : "Bff mobile Profile",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffmobileprofile"
+          },
+          "relationships" : [ {
+            "description" : "Manage user",
+            "destinationId" : "55",
+            "id" : "98",
+            "sourceId" : "97",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage user",
+            "destinationId" : "31",
+            "id" : "99",
+            "linkedRelationshipId" : "98",
+            "sourceId" : "97"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /register",
+          "documentation" : { },
+          "id" : "101",
+          "name" : "Bff mobile Register",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffmobileregister"
+          },
+          "relationships" : [ {
+            "description" : "Call register with register endpoint",
+            "destinationId" : "22",
+            "id" : "102",
+            "sourceId" : "101",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Call register with register endpoint",
+            "destinationId" : "13",
+            "id" : "103",
+            "linkedRelationshipId" : "102",
+            "sourceId" : "101"
+          }, {
+            "description" : "Store data user",
+            "destinationId" : "76",
+            "id" : "105",
+            "sourceId" : "101",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Store data user",
+            "destinationId" : "31",
+            "id" : "106",
+            "linkedRelationshipId" : "105",
+            "sourceId" : "101"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /reservation",
+          "documentation" : { },
+          "id" : "107",
+          "name" : "Bff mobile Reservation",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffmobilereservation"
+          },
+          "relationships" : [ {
+            "description" : "Store data reservation",
+            "destinationId" : "60",
+            "id" : "108",
+            "sourceId" : "107",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Store data reservation",
+            "destinationId" : "31",
+            "id" : "109",
+            "linkedRelationshipId" : "108",
+            "sourceId" : "107"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /services",
+          "documentation" : { },
+          "id" : "111",
+          "name" : "Bff mobile Services",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffmobileservices"
+          },
+          "relationships" : [ {
+            "description" : "Reads data services",
+            "destinationId" : "65",
+            "id" : "112",
+            "sourceId" : "111",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Reads data services",
+            "destinationId" : "31",
+            "id" : "113",
+            "linkedRelationshipId" : "112",
+            "sourceId" : "111"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        } ],
+        "description" : "Backend to handle Mobile related requests",
+        "documentation" : { },
+        "id" : "81",
+        "name" : "BFF for Mobile",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cbffmobile"
+        },
+        "relationships" : [ {
+          "description" : "Call login with email endpoint",
+          "destinationId" : "14",
+          "id" : "85",
+          "linkedRelationshipId" : "83",
+          "sourceId" : "81"
+        }, {
+          "description" : "Call login with email endpoint",
+          "destinationId" : "13",
+          "id" : "86",
+          "linkedRelationshipId" : "83",
+          "sourceId" : "81"
+        }, {
+          "description" : "Get user",
+          "destinationId" : "76",
+          "id" : "89",
+          "linkedRelationshipId" : "87",
+          "sourceId" : "81"
+        }, {
+          "description" : "Get user",
+          "destinationId" : "31",
+          "id" : "90",
+          "linkedRelationshipId" : "87",
+          "sourceId" : "81"
+        }, {
+          "description" : "Retrieving billing data from database",
+          "destinationId" : "69",
+          "id" : "94",
+          "linkedRelationshipId" : "92",
+          "sourceId" : "81"
+        }, {
+          "destinationId" : "41",
+          "id" : "96",
+          "linkedRelationshipId" : "95",
+          "sourceId" : "81"
+        }, {
+          "description" : "Manage user",
+          "destinationId" : "55",
+          "id" : "100",
+          "linkedRelationshipId" : "98",
+          "sourceId" : "81"
+        }, {
+          "description" : "Call register with register endpoint",
+          "destinationId" : "22",
+          "id" : "104",
+          "linkedRelationshipId" : "102",
+          "sourceId" : "81"
+        }, {
+          "description" : "Store data reservation",
+          "destinationId" : "60",
+          "id" : "110",
+          "linkedRelationshipId" : "108",
+          "sourceId" : "81"
+        }, {
+          "description" : "Reads data services",
+          "destinationId" : "65",
+          "id" : "114",
+          "linkedRelationshipId" : "112",
+          "sourceId" : "81"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Raiden"
+      }, {
+        "components" : [ {
+          "description" : "Handle /address",
+          "documentation" : { },
+          "id" : "116",
+          "name" : "Bff Web Address",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffwebaddress"
+          },
+          "relationships" : [ {
+            "description" : "Manage address data",
+            "destinationId" : "32",
+            "id" : "117",
+            "sourceId" : "116",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage address data",
+            "destinationId" : "31",
+            "id" : "118",
+            "linkedRelationshipId" : "117",
+            "sourceId" : "116"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /auth",
+          "documentation" : { },
+          "id" : "121",
+          "name" : "Bff Web Auth",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffwebauth"
+          },
+          "relationships" : [ {
+            "description" : "Call login with email endpoint",
+            "destinationId" : "26",
+            "id" : "122",
+            "sourceId" : "121",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Call login with email endpoint",
+            "destinationId" : "25",
+            "id" : "123",
+            "linkedRelationshipId" : "122",
+            "sourceId" : "121"
+          }, {
+            "description" : "Get user",
+            "destinationId" : "76",
+            "id" : "126",
+            "sourceId" : "121",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Get user",
+            "destinationId" : "31",
+            "id" : "127",
+            "linkedRelationshipId" : "126",
+            "sourceId" : "121"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "description" : "Handle /faskes",
+          "documentation" : { },
+          "id" : "129",
+          "name" : "Bff Web Faskes",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffwebfaskes"
+          },
+          "relationships" : [ {
+            "description" : "Manage data faskes",
+            "destinationId" : "37",
+            "id" : "130",
+            "sourceId" : "129",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage data faskes",
+            "destinationId" : "31",
+            "id" : "131",
+            "linkedRelationshipId" : "130",
+            "sourceId" : "129"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /payment",
+          "documentation" : { },
+          "id" : "133",
+          "name" : "Bff Web Payment",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffwebpayment"
+          },
+          "relationships" : [ {
+            "description" : "Payment validation",
+            "destinationId" : "41",
+            "id" : "134",
+            "sourceId" : "133",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Payment validation",
+            "destinationId" : "31",
+            "id" : "135",
+            "linkedRelationshipId" : "134",
+            "sourceId" : "133"
+          }, {
+            "description" : "Retrieving Billing",
+            "destinationId" : "69",
+            "id" : "137",
+            "sourceId" : "133",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /poli",
+          "documentation" : { },
+          "id" : "139",
+          "name" : "Bff Web Poli",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffwebpoli"
+          },
+          "relationships" : [ {
+            "description" : "Manage data poli",
+            "destinationId" : "51",
+            "id" : "140",
+            "sourceId" : "139",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage data poli",
+            "destinationId" : "31",
+            "id" : "141",
+            "linkedRelationshipId" : "140",
+            "sourceId" : "139"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /reservation",
+          "documentation" : { },
+          "id" : "143",
+          "name" : "Bff Web Reservation",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffwebreservation"
+          },
+          "relationships" : [ {
+            "description" : "Manage data reservation",
+            "destinationId" : "60",
+            "id" : "144",
+            "sourceId" : "143",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage data reservation",
+            "destinationId" : "31",
+            "id" : "145",
+            "linkedRelationshipId" : "144",
+            "sourceId" : "143"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /services",
+          "documentation" : { },
+          "id" : "147",
+          "name" : "Bff Web Services",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffwebservices"
+          },
+          "relationships" : [ {
+            "description" : "Manage data services",
+            "destinationId" : "65",
+            "id" : "148",
+            "sourceId" : "147",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage data services",
+            "destinationId" : "31",
+            "id" : "149",
+            "linkedRelationshipId" : "148",
+            "sourceId" : "147"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        }, {
+          "description" : "Handle /users",
+          "documentation" : { },
+          "id" : "151",
+          "name" : "Bff Web Users Management",
+          "properties" : {
+            "structurizr.dsl.identifier" : "combffwebusersmanagement"
+          },
+          "relationships" : [ {
+            "description" : "CRUD users and access rights",
+            "destinationId" : "76",
+            "id" : "152",
+            "sourceId" : "151",
+            "tags" : "Relationship"
+          }, {
+            "description" : "CRUD users and access rights",
+            "destinationId" : "31",
+            "id" : "153",
+            "linkedRelationshipId" : "152",
+            "sourceId" : "151"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Raiden"
+        } ],
+        "description" : "Backend to handle Web related requests",
+        "documentation" : { },
+        "id" : "115",
+        "name" : "BFF for Web",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cbffweb"
+        },
+        "relationships" : [ {
+          "description" : "Manage address data",
+          "destinationId" : "32",
+          "id" : "119",
+          "linkedRelationshipId" : "117",
+          "sourceId" : "115"
+        }, {
+          "description" : "Manage address data",
+          "destinationId" : "31",
+          "id" : "120",
+          "linkedRelationshipId" : "117",
+          "sourceId" : "115"
+        }, {
+          "description" : "Call login with email endpoint",
+          "destinationId" : "26",
+          "id" : "124",
+          "linkedRelationshipId" : "122",
+          "sourceId" : "115"
+        }, {
+          "description" : "Call login with email endpoint",
+          "destinationId" : "25",
+          "id" : "125",
+          "linkedRelationshipId" : "122",
+          "sourceId" : "115"
+        }, {
+          "description" : "Get user",
+          "destinationId" : "76",
+          "id" : "128",
+          "linkedRelationshipId" : "126",
+          "sourceId" : "115"
+        }, {
+          "description" : "Manage data faskes",
+          "destinationId" : "37",
+          "id" : "132",
+          "linkedRelationshipId" : "130",
+          "sourceId" : "115"
+        }, {
+          "description" : "Payment validation",
+          "destinationId" : "41",
+          "id" : "136",
+          "linkedRelationshipId" : "134",
+          "sourceId" : "115"
+        }, {
+          "description" : "Retrieving Billing",
+          "destinationId" : "69",
+          "id" : "138",
+          "linkedRelationshipId" : "137",
+          "sourceId" : "115"
+        }, {
+          "description" : "Manage data poli",
+          "destinationId" : "51",
+          "id" : "142",
+          "linkedRelationshipId" : "140",
+          "sourceId" : "115"
+        }, {
+          "description" : "Manage data reservation",
+          "destinationId" : "60",
+          "id" : "146",
+          "linkedRelationshipId" : "144",
+          "sourceId" : "115"
+        }, {
+          "description" : "Manage data services",
+          "destinationId" : "65",
+          "id" : "150",
+          "linkedRelationshipId" : "148",
+          "sourceId" : "115"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Raiden"
+      }, {
+        "components" : [ {
+          "description" : "Mobile Login screen.",
+          "documentation" : { },
+          "id" : "155",
+          "name" : "Mobile Login",
+          "properties" : {
+            "structurizr.dsl.identifier" : "commobilelogin"
+          },
+          "relationships" : [ {
+            "description" : "Login via Email",
+            "destinationId" : "82",
+            "id" : "156",
+            "sourceId" : "155",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Login via Email",
+            "destinationId" : "81",
+            "id" : "157",
+            "linkedRelationshipId" : "156",
+            "sourceId" : "155"
+          } ],
+          "tags" : "Element,Component,Screen",
+          "technology" : "Flutter"
+        }, {
+          "description" : "Mobile Payment screen.",
+          "documentation" : { },
+          "id" : "160",
+          "name" : "Mobile Payment",
+          "properties" : {
+            "structurizr.dsl.identifier" : "commobilepayment"
+          },
+          "relationships" : [ {
+            "description" : "Make payments",
+            "destinationId" : "91",
+            "id" : "161",
+            "sourceId" : "160",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Make payments",
+            "destinationId" : "81",
+            "id" : "162",
+            "linkedRelationshipId" : "161",
+            "sourceId" : "160"
+          } ],
+          "tags" : "Element,Component,Screen",
+          "technology" : "Flutter"
+        }, {
+          "description" : "Mobile Profile screen.",
+          "documentation" : { },
+          "id" : "164",
+          "name" : "Mobile Profile",
+          "properties" : {
+            "structurizr.dsl.identifier" : "commobileprofile"
+          },
+          "relationships" : [ {
+            "description" : "Manage user profile",
+            "destinationId" : "97",
+            "id" : "165",
+            "sourceId" : "164",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage user profile",
+            "destinationId" : "81",
+            "id" : "166",
+            "linkedRelationshipId" : "165",
+            "sourceId" : "164"
+          } ],
+          "tags" : "Element,Component,Screen",
+          "technology" : "Flutter"
+        }, {
+          "description" : "Mobile Register screen.",
+          "documentation" : { },
+          "id" : "168",
+          "name" : "Mobile Register",
+          "properties" : {
+            "structurizr.dsl.identifier" : "commobileregister"
+          },
+          "relationships" : [ {
+            "description" : "Login via Email",
+            "destinationId" : "101",
+            "id" : "169",
+            "sourceId" : "168",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Login via Email",
+            "destinationId" : "81",
+            "id" : "170",
+            "linkedRelationshipId" : "169",
+            "sourceId" : "168"
+          } ],
+          "tags" : "Element,Component,Screen",
+          "technology" : "Flutter"
+        }, {
+          "description" : "Mobile reservation screen.",
+          "documentation" : { },
+          "id" : "172",
+          "name" : "Mobile Reservation",
+          "properties" : {
+            "structurizr.dsl.identifier" : "commobilereservation"
+          },
+          "relationships" : [ {
+            "description" : "Create reservation",
+            "destinationId" : "107",
+            "id" : "173",
+            "sourceId" : "172",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Create reservation",
+            "destinationId" : "81",
+            "id" : "174",
+            "linkedRelationshipId" : "173",
+            "sourceId" : "172"
+          } ],
+          "tags" : "Element,Component,Screen",
+          "technology" : "Flutter"
+        }, {
+          "description" : "Mobile search health services screen.",
+          "documentation" : { },
+          "id" : "176",
+          "name" : "Mobile Search Services",
+          "properties" : {
+            "structurizr.dsl.identifier" : "commobileservices"
+          },
+          "relationships" : [ {
+            "description" : "Search health services by keyword",
+            "destinationId" : "111",
+            "id" : "177",
+            "sourceId" : "176",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Search health services by keyword",
+            "destinationId" : "81",
+            "id" : "178",
+            "linkedRelationshipId" : "177",
+            "sourceId" : "176"
+          } ],
+          "tags" : "Element,Component,Screen",
+          "technology" : "Flutter"
+        } ],
+        "description" : "Mobile screen for Medpoint application.",
+        "documentation" : { },
+        "id" : "154",
+        "name" : "Mobile Medpoint",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cmobile"
+        },
+        "relationships" : [ {
+          "description" : "Login via Email",
+          "destinationId" : "82",
+          "id" : "158",
+          "linkedRelationshipId" : "156",
+          "sourceId" : "154"
+        }, {
+          "description" : "Login via Email",
+          "destinationId" : "81",
+          "id" : "159",
+          "linkedRelationshipId" : "156",
+          "sourceId" : "154"
+        }, {
+          "description" : "Make payments",
+          "destinationId" : "91",
+          "id" : "163",
+          "linkedRelationshipId" : "161",
+          "sourceId" : "154"
+        }, {
+          "description" : "Manage user profile",
+          "destinationId" : "97",
+          "id" : "167",
+          "linkedRelationshipId" : "165",
+          "sourceId" : "154"
+        }, {
+          "description" : "Login via Email",
+          "destinationId" : "101",
+          "id" : "171",
+          "linkedRelationshipId" : "169",
+          "sourceId" : "154"
+        }, {
+          "description" : "Create reservation",
+          "destinationId" : "107",
+          "id" : "175",
+          "linkedRelationshipId" : "173",
+          "sourceId" : "154"
+        }, {
+          "description" : "Search health services by keyword",
+          "destinationId" : "111",
+          "id" : "179",
+          "linkedRelationshipId" : "177",
+          "sourceId" : "154"
+        } ],
+        "tags" : "Element,Container,Screen",
+        "technology" : "Flutter"
+      }, {
+        "components" : [ {
+          "description" : "Web CMS Address screen.",
+          "documentation" : { },
+          "id" : "181",
+          "name" : "Web CMS Address",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comwebaddress"
+          },
+          "relationships" : [ {
+            "description" : "Mange Address master data",
+            "destinationId" : "116",
+            "id" : "182",
+            "sourceId" : "181",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Mange Address master data",
+            "destinationId" : "115",
+            "id" : "183",
+            "linkedRelationshipId" : "182",
+            "sourceId" : "181"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        }, {
+          "description" : "Web CMS List Doctor screen.",
+          "documentation" : { },
+          "id" : "186",
+          "name" : "Web CMS List Doctor",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comwebdoctor"
+          },
+          "relationships" : [ {
+            "description" : "Mange Address master data",
+            "destinationId" : "151",
+            "id" : "187",
+            "sourceId" : "186",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Mange Address master data",
+            "destinationId" : "115",
+            "id" : "188",
+            "linkedRelationshipId" : "187",
+            "sourceId" : "186"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        }, {
+          "description" : "Web CMS Faskes screen.",
+          "documentation" : { },
+          "id" : "190",
+          "name" : "Web CMS Faskes",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comwebfaskes"
+          },
+          "relationships" : [ {
+            "description" : "Mange Faskes master data",
+            "destinationId" : "129",
+            "id" : "191",
+            "sourceId" : "190",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Mange Faskes master data",
+            "destinationId" : "115",
+            "id" : "192",
+            "linkedRelationshipId" : "191",
+            "sourceId" : "190"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        }, {
+          "description" : "Web CMS Login screen.",
+          "documentation" : { },
+          "id" : "194",
+          "name" : "Web CMS Login",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comweblogin"
+          },
+          "relationships" : [ {
+            "description" : "Login via Email",
+            "destinationId" : "121",
+            "id" : "195",
+            "sourceId" : "194",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Login via Email",
+            "destinationId" : "115",
+            "id" : "196",
+            "linkedRelationshipId" : "195",
+            "sourceId" : "194"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        }, {
+          "description" : "Web CMS Payment screen.",
+          "documentation" : { },
+          "id" : "198",
+          "name" : "Web CMS Payment",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comwebpayment"
+          },
+          "relationships" : [ {
+            "description" : "Manage Payment master data",
+            "destinationId" : "133",
+            "id" : "199",
+            "sourceId" : "198",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Manage Payment master data",
+            "destinationId" : "115",
+            "id" : "200",
+            "linkedRelationshipId" : "199",
+            "sourceId" : "198"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        }, {
+          "description" : "Web CMS Poli screen.",
+          "documentation" : { },
+          "id" : "202",
+          "name" : "Web CMS Poli",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comwebpoli"
+          },
+          "relationships" : [ {
+            "description" : "Mange Poli master data",
+            "destinationId" : "139",
+            "id" : "203",
+            "sourceId" : "202",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Mange Poli master data",
+            "destinationId" : "115",
+            "id" : "204",
+            "linkedRelationshipId" : "203",
+            "sourceId" : "202"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        }, {
+          "description" : "Web CMS Reservation screen.",
+          "documentation" : { },
+          "id" : "206",
+          "name" : "Web CMS Reservation",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comwebreservation"
+          },
+          "relationships" : [ {
+            "description" : "Mange reservation data",
+            "destinationId" : "143",
+            "id" : "207",
+            "sourceId" : "206",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Mange reservation data",
+            "destinationId" : "115",
+            "id" : "208",
+            "linkedRelationshipId" : "207",
+            "sourceId" : "206"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        }, {
+          "description" : "Web CMS Services screen.",
+          "documentation" : { },
+          "id" : "210",
+          "name" : "Web CMS Services",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comwebservices"
+          },
+          "relationships" : [ {
+            "description" : "Mange Services master data",
+            "destinationId" : "147",
+            "id" : "211",
+            "sourceId" : "210",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Mange Services master data",
+            "destinationId" : "115",
+            "id" : "212",
+            "linkedRelationshipId" : "211",
+            "sourceId" : "210"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        }, {
+          "description" : "Web CMS User Management screen.",
+          "documentation" : { },
+          "id" : "214",
+          "name" : "Web CMS User Management",
+          "properties" : {
+            "structurizr.dsl.identifier" : "comwebusermanagement"
+          },
+          "relationships" : [ {
+            "description" : "Mange user's data",
+            "destinationId" : "151",
+            "id" : "215",
+            "sourceId" : "214",
+            "tags" : "Relationship"
+          }, {
+            "description" : "Mange user's data",
+            "destinationId" : "115",
+            "id" : "216",
+            "linkedRelationshipId" : "215",
+            "sourceId" : "214"
+          } ],
+          "tags" : "Element,Component,Web",
+          "technology" : "React JS with Typescript"
+        } ],
+        "description" : "Web CMS for Medpoint application.",
+        "documentation" : { },
+        "id" : "180",
+        "name" : "Web CMS Medpoint",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cweb"
+        },
+        "relationships" : [ {
+          "description" : "Mange Address master data",
+          "destinationId" : "116",
+          "id" : "184",
+          "linkedRelationshipId" : "182",
+          "sourceId" : "180"
+        }, {
+          "description" : "Mange Address master data",
+          "destinationId" : "115",
+          "id" : "185",
+          "linkedRelationshipId" : "182",
+          "sourceId" : "180"
+        }, {
+          "description" : "Mange Address master data",
+          "destinationId" : "151",
+          "id" : "189",
+          "linkedRelationshipId" : "187",
+          "sourceId" : "180"
+        }, {
+          "description" : "Mange Faskes master data",
+          "destinationId" : "129",
+          "id" : "193",
+          "linkedRelationshipId" : "191",
+          "sourceId" : "180"
+        }, {
+          "description" : "Login via Email",
+          "destinationId" : "121",
+          "id" : "197",
+          "linkedRelationshipId" : "195",
+          "sourceId" : "180"
+        }, {
+          "description" : "Manage Payment master data",
+          "destinationId" : "133",
+          "id" : "201",
+          "linkedRelationshipId" : "199",
+          "sourceId" : "180"
+        }, {
+          "description" : "Mange Poli master data",
+          "destinationId" : "139",
+          "id" : "205",
+          "linkedRelationshipId" : "203",
+          "sourceId" : "180"
+        }, {
+          "description" : "Mange reservation data",
+          "destinationId" : "143",
+          "id" : "209",
+          "linkedRelationshipId" : "207",
+          "sourceId" : "180"
+        }, {
+          "description" : "Mange Services master data",
+          "destinationId" : "147",
+          "id" : "213",
+          "linkedRelationshipId" : "211",
+          "sourceId" : "180"
+        } ],
+        "tags" : "Element,Container,Web",
+        "technology" : "React JS with Typescript"
+      } ],
+      "description" : "Online Reservation system",
+      "documentation" : { },
+      "id" : "4",
+      "location" : "Unspecified",
+      "name" : "Medpoint System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "ssmedpoint"
+      },
+      "relationships" : [ {
+        "description" : "Initiate Username/Password auth flow",
+        "destinationId" : "1",
+        "id" : "21",
+        "linkedRelationshipId" : "19",
+        "sourceId" : "4"
+      }, {
+        "description" : "Make payments to external",
+        "destinationId" : "2",
+        "id" : "47",
+        "linkedRelationshipId" : "45",
+        "sourceId" : "4"
+      }, {
+        "description" : "Call notification if success payments and write data reservation to database",
+        "destinationId" : "3",
+        "id" : "50",
+        "linkedRelationshipId" : "48",
+        "sourceId" : "4"
+      } ],
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Medpoint",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKICBuYW1lICJNZWRwb2ludCIKICBkZXNjcmlwdGlvbiAiTWVkcG9pbnQgaXMgYSBwbGF0Zm9ybSB0byByZXNlcnZlIGEgZG9jdG9yJ3MgYXBwb2ludG1lbnQiCgogIG1vZGVsIHsKICAgIHNzRXh0ZXJuYWxBdXRoID0gc29mdHdhcmVTeXN0ZW0gIkV4dGVybmFsIEF1dGgiIHsKICAgICAgICBkZXNjcmlwdGlvbiAiRXh0ZXJuYWwgSURQIChHb29nbGUvQXBwbGUvTWV0YS9Ud2lsbGlvL01haWxndW4pIgogICAgfQogICAgCiAgICBzc0V4dGVybmFsUGF5bWVudCA9IHNvZnR3YXJlU3lzdGVtICJFeHRlcm5hbCBQYXltZW50IiB7CiAgICAgICAgZGVzY3JpcHRpb24gIkV4dGVybmFsIFBheW1lbnQgKEJSSSkiCiAgICB9CiAgICAKICAgIHNzRXh0ZXJuYWxNZXNzYWdpbmcgPSBzb2Z0d2FyZVN5c3RlbSAiRXh0ZXJuYWwgTWVzc2FnaW5nIiB7CiAgICAgICAgZGVzY3JpcHRpb24gIkV4dGVybmFsIE1lc3NhZ2luZyAoVHdpbGxpby9NYWlsZ3VuL0ZDTSkiCiAgICB9CiAgICBzc01lZHBvaW50ID0gc29mdHdhcmVTeXN0ZW0gIk1lZHBvaW50IFN5c3RlbSIgewogICAgICAgIGRlc2NyaXB0aW9uICJPbmxpbmUgUmVzZXJ2YXRpb24gc3lzdGVtIgogICAgCiAgICAgICAgLy8gcmVzb3VyY2UKICAgICAgICBjRGF0YWJhc2UgPSBjb250YWluZXIgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTdG9yZXMgYWxsIGRhdGEgZm9yIHRoZSBhcHBsaWNhdGlvbi4iCiAgICAgICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICAgICAgICB0ZWNobm9sb2d5ICJQb3N0Z3JlU1FMIgogICAgICAgIAogICAgICAgICAgICBjb21EYXRhYmFzZUFkZHJlc3NUYWJsZSA9IGNvbXBvbmVudCAiYWRkcmVzcyIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTdG9yZXMgYWRkcmVzcyBkYXRhLiIKICAgICAgICAgICAgICB0YWdzICJEYXRhYmFzZSIKICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJQb3N0Z3JlU1FMIgogICAgICAgICAgICB9CiAgICAgICAgICAgIGNvbURhdGFiYXNlRmFza2VzVGFibGUgPSBjb21wb25lbnQgImZhc2tlcyIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTdG9yZXMgZmFza2VzIGRhdGEuIgogICAgICAgICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlBvc3RncmVTUUwiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29tRGF0YWJhc2VQb2xpVGFibGUgPSBjb21wb25lbnQgInBvbGkiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiU3RvcmVzIHBvbGkgZGF0YS4iCiAgICAgICAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21EYXRhYmFzZVJlc2VydmF0aW9uVGFibGUgPSBjb21wb25lbnQgInJlc2VydmF0aW9ucyIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTdG9yZXMgcmVzZXJ2YXRpb24gZGF0YS4iCiAgICAgICAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21EYXRhYmFzZVNlcnZpY2VzVGFibGUgPSBjb21wb25lbnQgInNlcnZpY2VzIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlN0b3JlcyBoZWFsdGggc2VydmljZXMgZGF0YS4iCiAgICAgICAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21EYXRhYmFzZVRyYW5zYWN0aW9uVGFibGUgPSBjb21wb25lbnQgInRyYW5zYWN0aW9ucyIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTdG9yZXMgdHJhbnNhY3Rpb24gZGF0YS4iCiAgICAgICAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21EYXRhYmFzZVVzZXJUYWJsZSA9IGNvbXBvbmVudCAidXNlcnMiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiU3RvcmVzIHVzZXJzIGRhdGEuIgogICAgICAgICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlBvc3RncmVTUUwiCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAKICAgICAgICAvLyBzdXBhYmFzZQogICAgICAgIGNBdXRoID0gY29udGFpbmVyICJTdXBhYmFzZSBBdXRoIHNlcnZpY2UiIHsKICAgICAgICAgIGRlc2NyaXB0aW9uICJCYWNrZW5kIHRvIGhhbmRsZSBhdXRobi9hdXRoeiIKICAgICAgICAgIHRlY2hub2xvZ3kgIlN1cGFiYXNlIgogICAgICAgIAogICAgICAgICAgY29tQXV0aEVtYWlsTG9naW4gPSBjb21wb25lbnQgIkF1dGggRW1haWwgTG9naW4iIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvbG9naW4vZW1haWwiCiAgICAgICAgICAgIC0+IGNvbURhdGFiYXNlVXNlclRhYmxlICJDaGVjayBpZiB1c2VyJ3MgZW1haWwgZXhpc3RzIgogICAgICAgICAgICAtPiBzc0V4dGVybmFsQXV0aCAiSW5pdGlhdGUgVXNlcm5hbWUvUGFzc3dvcmQgYXV0aCBmbG93IgogICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgY29tQXV0aEVtYWlsUmVnaXN0ZXIgPSBjb21wb25lbnQgIkF1dGggRW1haWwgUmVnaXN0ZXIiIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvcmVnaXN0ZXIiCiAgICAgICAgICAgIC0+IGNvbURhdGFiYXNlVXNlclRhYmxlICJDaGVjayBpZiB1c2VyJ3MgZW1haWwgZXhpc3RzIgogICAgICAgICAgfQogICAgICAgIH0KICAgICAgICAKICAgICAgICBjQXV0aEludGVybmFsID0gY29udGFpbmVyICJTdXBhYmFzZSBBdXRoIHNlcnZpY2UgaW50ZXJuYWwiIHsKICAgICAgICAgIGRlc2NyaXB0aW9uICJCYWNrZW5kIHRvIGhhbmRsZSBhdXRobi9hdXRoeiIKICAgICAgICAgIHRlY2hub2xvZ3kgIlN1cGFiYXNlIgogICAgICAgIAogICAgICAgICAgY29tQXV0aEVtYWlsTG9naW5JbnRlcm5hbCA9IGNvbXBvbmVudCAiQXV0aCBFbWFpbCBMb2dpbiBJbnRlcm5hbCIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9sb2dpbi9lbWFpbCIKICAgICAgICAgICAgLT4gY29tRGF0YWJhc2VVc2VyVGFibGUgIkNoZWNrIGlmIHVzZXIncyBlbWFpbCBleGlzdHMiCiAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIGNSZXN0ID0gY29udGFpbmVyICJQb3N0Z3JlU1FMIFJFU1QgU2VydmljZSIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiQmFja2VuZCB0byBoYW5kbGUgUkVTVCIKICAgICAgICAgICAgdGVjaG5vbG9neSAiU3VwYWJhc2UiCiAgICAgICAgCiAgICAgICAgICAgIGNvbVJlc3RBZGRyZXNzID0gY29tcG9uZW50ICJBZGRyZXNzIFJFU1RmdWwgZW5kcG9pbnQiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9hcGkvdjEvYWRkcmVzcyIKICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTdXBhYmFzZSIKICAgICAgICAgICAgCiAgICAgICAgICAgICAgLT4gY29tRGF0YWJhc2VBZGRyZXNzVGFibGUgIk1hbmFnZSBhZGRyZXNzIG1hc3RlciBkYXRhIgogICAgICAgICAgICB9CiAgICAgICAgICAgIGNvbVJlc3RGYXNrZXMgPSBjb21wb25lbnQgIkZhc2tlcyBSRVNUZnVsIGVuZHBvaW50IiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvYXBpL3YxL2Zhc2tlcyIKICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTdXBhYmFzZSIKICAgICAgICAgICAgCiAgICAgICAgICAgICAgLT4gY29tRGF0YWJhc2VGYXNrZXNUYWJsZSAiTWFuYWdlIGZhc2tlcyBtYXN0ZXIgZGF0YSIKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21SZXN0UGF5bWVudCA9IGNvbXBvbmVudCAiUGF5bWVudCBSRVNUZnVsIGVuZHBvaW50IiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvYXBpL3YxL3BheW1lbnQiCiAgICAgICAgICAgICAgdGVjaG5vbG9neSAiU3VwYWJhc2UiCiAgICAgICAgICAgIAogICAgICAgICAgICAgIC0+IGNvbURhdGFiYXNlUmVzZXJ2YXRpb25UYWJsZQogICAgICAgICAgICAgIC0+IHNzRXh0ZXJuYWxQYXltZW50ICJNYWtlIHBheW1lbnRzIHRvIGV4dGVybmFsIgogICAgICAgICAgICAgIC0+IHNzRXh0ZXJuYWxNZXNzYWdpbmcgIkNhbGwgbm90aWZpY2F0aW9uIGlmIHN1Y2Nlc3MgcGF5bWVudHMgYW5kIHdyaXRlIGRhdGEgcmVzZXJ2YXRpb24gdG8gZGF0YWJhc2UiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29tUmVzdFBvbGkgPSBjb21wb25lbnQgIlBvbGkgUkVTVGZ1bCBlbmRwb2ludCIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL2FwaS92MS9wb2xpIgogICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlN1cGFiYXNlIgogICAgICAgICAgICAKICAgICAgICAgICAgICAtPiBjb21EYXRhYmFzZVBvbGlUYWJsZSAiTWFuYWdlIHBvbGkgbWFzdGVyIGRhdGEiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29tUmVzdFByb2ZpbGUgPSBjb21wb25lbnQgIlByb2ZpbGUgUkVTVGZ1bCBlbmRwb2ludCIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL2FwaS92MS9wcm9maWxlIgogICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlN1cGFiYXNlIgogICAgICAgICAgICAKICAgICAgICAgICAgICAtPiBjb21EYXRhYmFzZVVzZXJUYWJsZSAiTWFuYWdlIHVzZXIncyBkYXRhIgogICAgICAgICAgICAgIC0+IHNzRXh0ZXJuYWxNZXNzYWdpbmcgIlNlbmQgbm90aWZpY2F0aW9ucyB1c2luZyIKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21SZXN0UmVzZXJ2YXRpb24gPSBjb21wb25lbnQgIlJlc2VydmF0aW9uIFJFU1RmdWwgZW5kcG9pbnQiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9hcGkvdjEvcmVzZXJ2YXRpb24iCiAgICAgICAgICAgICAgdGVjaG5vbG9neSAiU3VwYWJhc2UiCiAgICAgICAgICAgIAogICAgICAgICAgICAgIC0+IGNvbURhdGFiYXNlUmVzZXJ2YXRpb25UYWJsZSAiTWFuYWdlIGRhdGEgcmVzZXJ2YXRpb25zIgogICAgICAgICAgICAgIC0+IHNzRXh0ZXJuYWxNZXNzYWdpbmcgIkNhbGwgbm90aWZpY2F0aW9uIGlmIHN1Y2Nlc3MvY2FuY2VsbGVkIHJlc2VydmF0aW9uIgogICAgICAgICAgICAgIC0+IHNzRXh0ZXJuYWxQYXltZW50ICJNYWtlIHBheW1lbnRzIHRvIGV4dGVybmFsIgogICAgICAgICAgICB9CiAgICAgICAgICAgIGNvbVJlc3RTZXJ2aWNlcyA9IGNvbXBvbmVudCAiU2VydmljZXMgUkVTVGZ1bCBlbmRwb2ludCIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL2FwaS92MS9zZXJ2aWNlcyIKICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTdXBhYmFzZSIKICAgICAgICAgICAgCiAgICAgICAgICAgICAgLT4gY29tRGF0YWJhc2VTZXJ2aWNlc1RhYmxlICJNYW5hZ2UgZGF0YSBoZWFsdGggc2VydmljZXMiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29tUmVzdFRyYW5zYWN0aW9uID0gY29tcG9uZW50ICJUcmFuc2FjdGlvbiBSRVNUZnVsIGVuZHBvaW50IiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvYXBpL3YxL3RyYW5zYWN0aW9uIgogICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlN1cGFiYXNlIgogICAgICAgICAgICAKICAgICAgICAgICAgICAtPiBjb21EYXRhYmFzZVRyYW5zYWN0aW9uVGFibGUgIk1hbmFnZSBkYXRhIHRyYW5zYWN0aW9uIgogICAgICAgICAgICAgIC0+IGNvbVJlc3RQYXltZW50CiAgICAgICAgICAgICAgLT4gc3NFeHRlcm5hbE1lc3NhZ2luZyAiQ2FsbCBub3RpZmljYXRpb24gaWYgc3VjY2VzcyBwYXltZW50cyBhbmQgd3JpdGUgZGF0YSB0cmFuc2FjdGlvbiB0byBkYXRhYmFzZSIKICAgICAgICAgICAgICAtPiBzc0V4dGVybmFsUGF5bWVudCAiTWFrZSBwYXltZW50cyB0byBleHRlcm5hbCIKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21SZXN0VXNlciA9IGNvbXBvbmVudCAiVXNlciBSRVNUZnVsIGVuZHBvaW50IiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9hcGkvdjEvdXNlcnMiCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTdXBhYmFzZSIKICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAtPiBjb21EYXRhYmFzZVVzZXJUYWJsZSAiTWFuYWdlIHVzZXIncyBkYXRhIgogICAgICAgICAgICAgICAgLT4gc3NFeHRlcm5hbFBheW1lbnQgIkJpbGxpbmcgYW5kIG1ha2luZyBwYXltZW50cywgcGF5bWVudCB2YWxpZGF0aW9uIgogICAgICAgICAgICAgICAgLT4gc3NFeHRlcm5hbE1lc3NhZ2luZyAiQWxsb3cgdG8gcmVjaWV2ZXMgYW5kIHJlYWQgbm90aWZpY2F0aW9ucyIKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIAogICAgICAgIC8vIGJmZgogICAgICAgIGNCZmZNb2JpbGUgPSBjb250YWluZXIgIkJGRiBmb3IgTW9iaWxlIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJCYWNrZW5kIHRvIGhhbmRsZSBNb2JpbGUgcmVsYXRlZCByZXF1ZXN0cyIKICAgICAgICAgICAgdGVjaG5vbG9neSAiUmFpZGVuIgogICAgICAgIAogICAgICAgICAgICBjb21CZmZNb2JpbGVBdXRoID0gY29tcG9uZW50ICJCZmYgbW9iaWxlIEF1dGgiIHsKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL2F1dGgiCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJSYWlkZW4gd2l0aCBHbyIKICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAtPiBjb21BdXRoRW1haWxMb2dpbiAiQ2FsbCBsb2dpbiB3aXRoIGVtYWlsIGVuZHBvaW50IgogICAgICAgICAgICAgICAgLT4gY29tUmVzdFVzZXIgIkdldCB1c2VyIgogICAgICAgICAgICB9CiAgICAgICAgICAgIGNvbUJmZk1vYmlsZVBheW1lbnQgPSBjb21wb25lbnQgIkJmZiBtb2JpbGUgUGF5bWVudCIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL3BheW1lbnQiCiAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUmFpZGVuIgogICAgICAgICAgICAKICAgICAgICAgICAgICAtPiBjb21SZXN0VHJhbnNhY3Rpb24gIlJldHJpZXZpbmcgYmlsbGluZyBkYXRhIGZyb20gZGF0YWJhc2UiCiAgICAgICAgICAgICAgLT4gY29tUmVzdFBheW1lbnQKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21CZmZNb2JpbGVQcm9maWxlID0gY29tcG9uZW50ICJCZmYgbW9iaWxlIFByb2ZpbGUiIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9wcm9maWxlIgogICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlJhaWRlbiIKICAgICAgICAgICAgCiAgICAgICAgICAgICAgLT4gY29tUmVzdFByb2ZpbGUgIk1hbmFnZSB1c2VyIgogICAgICAgICAgICB9CiAgICAgICAgICAgIGNvbUJmZk1vYmlsZVJlZ2lzdGVyID0gY29tcG9uZW50ICJCZmYgbW9iaWxlIFJlZ2lzdGVyIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvcmVnaXN0ZXIiCiAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUmFpZGVuIgogICAgICAgICAgICAKICAgICAgICAgICAgICAtPiBjb21BdXRoRW1haWxSZWdpc3RlciAiQ2FsbCByZWdpc3RlciB3aXRoIHJlZ2lzdGVyIGVuZHBvaW50IgogICAgICAgICAgICAgIC0+IGNvbVJlc3RVc2VyICJTdG9yZSBkYXRhIHVzZXIiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29tQmZmTW9iaWxlUmVzZXJ2YXRpb24gPSBjb21wb25lbnQgIkJmZiBtb2JpbGUgUmVzZXJ2YXRpb24iIHsKICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9yZXNlcnZhdGlvbiIKICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJSYWlkZW4iCiAgICAgICAgICAgIAogICAgICAgICAgICAgIC0+IGNvbVJlc3RSZXNlcnZhdGlvbiAiU3RvcmUgZGF0YSByZXNlcnZhdGlvbiIKICAgICAgICAgICAgfQogICAgICAgICAgICBjb21CZmZNb2JpbGVTZXJ2aWNlcyA9IGNvbXBvbmVudCAiQmZmIG1vYmlsZSBTZXJ2aWNlcyIgewogICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL3NlcnZpY2VzIgogICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlJhaWRlbiIKICAgICAgICAgICAgCiAgICAgICAgICAgICAgLT4gY29tUmVzdFNlcnZpY2VzICJSZWFkcyBkYXRhIHNlcnZpY2VzIgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIGNCZmZXZWIgPSBjb250YWluZXIgIkJGRiBmb3IgV2ViIiB7CiAgICAgICAgICBkZXNjcmlwdGlvbiAiQmFja2VuZCB0byBoYW5kbGUgV2ViIHJlbGF0ZWQgcmVxdWVzdHMiCiAgICAgICAgICB0ZWNobm9sb2d5ICJSYWlkZW4iCiAgICAgICAgCiAgICAgICAgICBjb21CZmZXZWJBZGRyZXNzID0gY29tcG9uZW50ICJCZmYgV2ViIEFkZHJlc3MiIHsKICAgICAgICAgICAgdGVjaG5vbG9neSAiUmFpZGVuIgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9hZGRyZXNzIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbVJlc3RBZGRyZXNzICJNYW5hZ2UgYWRkcmVzcyBkYXRhIgogICAgICAgICAgfQogICAgICAgICAgY29tQmZmV2ViQXV0aCA9IGNvbXBvbmVudCAiQmZmIFdlYiBBdXRoIiB7CiAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvYXV0aCIKICAgICAgICAgIAogICAgICAgICAgICAgIC0+IGNvbUF1dGhFbWFpbExvZ2luSW50ZXJuYWwgIkNhbGwgbG9naW4gd2l0aCBlbWFpbCBlbmRwb2ludCIKICAgICAgICAgICAgICAtPiBjb21SZXN0VXNlciAiR2V0IHVzZXIiCiAgICAgICAgICB9CiAgICAgICAgICBjb21CZmZXZWJGYXNrZXMgPSBjb21wb25lbnQgIkJmZiBXZWIgRmFza2VzIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIlJhaWRlbiIKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvZmFza2VzIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbVJlc3RGYXNrZXMgIk1hbmFnZSBkYXRhIGZhc2tlcyIKICAgICAgICAgIH0KICAgICAgICAgIGNvbUJmZldlYlBheW1lbnQgPSBjb21wb25lbnQgIkJmZiBXZWIgUGF5bWVudCIgewogICAgICAgICAgdGVjaG5vbG9neSAiUmFpZGVuIgogICAgICAgICAgZGVzY3JpcHRpb24gIkhhbmRsZSAvcGF5bWVudCIKICAgICAgICAgIAogICAgICAgICAgICAtPiBjb21SZXN0UGF5bWVudCAiUGF5bWVudCB2YWxpZGF0aW9uIgogICAgICAgICAgICAtPiBjb21SZXN0VHJhbnNhY3Rpb24gIlJldHJpZXZpbmcgQmlsbGluZyIKICAgICAgICAgIH0KICAgICAgICAgIGNvbUJmZldlYlBvbGkgPSBjb21wb25lbnQgIkJmZiBXZWIgUG9saSIgewogICAgICAgICAgICB0ZWNobm9sb2d5ICJSYWlkZW4iCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL3BvbGkiCiAgICAgICAgICAKICAgICAgICAgICAgLT4gY29tUmVzdFBvbGkgIk1hbmFnZSBkYXRhIHBvbGkiCiAgICAgICAgICB9CiAgICAgICAgICBjb21CZmZXZWJSZXNlcnZhdGlvbiA9IGNvbXBvbmVudCAiQmZmIFdlYiBSZXNlcnZhdGlvbiIgewogICAgICAgICAgICB0ZWNobm9sb2d5ICJSYWlkZW4iCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL3Jlc2VydmF0aW9uIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbVJlc3RSZXNlcnZhdGlvbiAiTWFuYWdlIGRhdGEgcmVzZXJ2YXRpb24iCiAgICAgICAgICB9CiAgICAgICAgICBjb21CZmZXZWJTZXJ2aWNlcyA9IGNvbXBvbmVudCAiQmZmIFdlYiBTZXJ2aWNlcyIgewogICAgICAgICAgICB0ZWNobm9sb2d5ICJSYWlkZW4iCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGUgL3NlcnZpY2VzIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbVJlc3RTZXJ2aWNlcyAiTWFuYWdlIGRhdGEgc2VydmljZXMiCiAgICAgICAgICB9CiAgICAgICAgICBjb21CZmZXZWJVc2Vyc01hbmFnZW1lbnQgPSBjb21wb25lbnQgIkJmZiBXZWIgVXNlcnMgTWFuYWdlbWVudCIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC91c2VycyIKICAgICAgICAgICAgdGVjaG5vbG9neSAiUmFpZGVuIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbVJlc3RVc2VyICJDUlVEIHVzZXJzIGFuZCBhY2Nlc3MgcmlnaHRzIgogICAgICAgICAgfQogICAgICAgIH0KICAgIAogICAgICAgIC8vIEZFIChtb2JpbGUvd2ViKQogICAgICAgIGNNb2JpbGUgPSBjb250YWluZXIgIk1vYmlsZSBNZWRwb2ludCIgewogICAgICAgICAgdGVjaG5vbG9neSAiRmx1dHRlciIKICAgICAgICAgIHRhZ3MgIlNjcmVlbiIKICAgICAgICAgIGRlc2NyaXB0aW9uICJNb2JpbGUgc2NyZWVuIGZvciBNZWRwb2ludCBhcHBsaWNhdGlvbi4iCiAgICAgICAgCiAgICAgICAgICBjb21Nb2JpbGVMb2dpbiA9IGNvbXBvbmVudCAiTW9iaWxlIExvZ2luIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIkZsdXR0ZXIiCiAgICAgICAgICAgIHRhZ3MgIlNjcmVlbiIKICAgICAgICAgICAgZGVzY3JpcHRpb24gIk1vYmlsZSBMb2dpbiBzY3JlZW4uIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbUJmZk1vYmlsZUF1dGggIkxvZ2luIHZpYSBFbWFpbCIKICAgICAgICAgIH0KICAgICAgICAgIGNvbU1vYmlsZVBheW1lbnQgPSBjb21wb25lbnQgIk1vYmlsZSBQYXltZW50IiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIkZsdXR0ZXIiCiAgICAgICAgICAgIHRhZ3MgIlNjcmVlbiIKICAgICAgICAgICAgZGVzY3JpcHRpb24gIk1vYmlsZSBQYXltZW50IHNjcmVlbi4iCiAgICAgICAgICAKICAgICAgICAgICAgLT4gY29tQmZmTW9iaWxlUGF5bWVudCAiTWFrZSBwYXltZW50cyIKICAgICAgICAgIH0KICAgICAgICAgIGNvbU1vYmlsZVByb2ZpbGUgPSBjb21wb25lbnQgIk1vYmlsZSBQcm9maWxlIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIkZsdXR0ZXIiCiAgICAgICAgICAgIHRhZ3MgIlNjcmVlbiIKICAgICAgICAgICAgZGVzY3JpcHRpb24gIk1vYmlsZSBQcm9maWxlIHNjcmVlbi4iCiAgICAgICAgICAKICAgICAgICAgICAgLT4gY29tQmZmTW9iaWxlUHJvZmlsZSAiTWFuYWdlIHVzZXIgcHJvZmlsZSIKICAgICAgICAgIC8vICAtPiBzc0V4dGVybmFsTWVzc2FnaW5nCiAgICAgICAgICB9CiAgICAgICAgICBjb21Nb2JpbGVSZWdpc3RlciA9IGNvbXBvbmVudCAiTW9iaWxlIFJlZ2lzdGVyIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIkZsdXR0ZXIiCiAgICAgICAgICAgIHRhZ3MgIlNjcmVlbiIKICAgICAgICAgICAgZGVzY3JpcHRpb24gIk1vYmlsZSBSZWdpc3RlciBzY3JlZW4uIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbUJmZk1vYmlsZVJlZ2lzdGVyICJMb2dpbiB2aWEgRW1haWwiCiAgICAgICAgICB9CiAgICAgICAgICBjb21Nb2JpbGVSZXNlcnZhdGlvbiA9IGNvbXBvbmVudCAiTW9iaWxlIFJlc2VydmF0aW9uIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIkZsdXR0ZXIiCiAgICAgICAgICAgIHRhZ3MgIlNjcmVlbiIKICAgICAgICAgICAgZGVzY3JpcHRpb24gIk1vYmlsZSByZXNlcnZhdGlvbiBzY3JlZW4uIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbUJmZk1vYmlsZVJlc2VydmF0aW9uICJDcmVhdGUgcmVzZXJ2YXRpb24iCiAgICAgICAgICAvLyAgLT4gc3NFeHRlcm5hbE1lc3NhZ2luZwogICAgICAgICAgfQogICAgICAgICAgY29tTW9iaWxlU2VydmljZXMgPSBjb21wb25lbnQgIk1vYmlsZSBTZWFyY2ggU2VydmljZXMiIHsKICAgICAgICAgICAgdGVjaG5vbG9neSAiRmx1dHRlciIKICAgICAgICAgICAgdGFncyAiU2NyZWVuIgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiTW9iaWxlIHNlYXJjaCBoZWFsdGggc2VydmljZXMgc2NyZWVuLiIKICAgICAgICAgIAogICAgICAgICAgICAtPiBjb21CZmZNb2JpbGVTZXJ2aWNlcyAiU2VhcmNoIGhlYWx0aCBzZXJ2aWNlcyBieSBrZXl3b3JkIgogICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBjV2ViID0gY29udGFpbmVyICJXZWIgQ01TIE1lZHBvaW50IiB7CiAgICAgICAgICB0ZWNobm9sb2d5ICJSZWFjdCBKUyB3aXRoIFR5cGVzY3JpcHQiCiAgICAgICAgICB0YWdzICJXZWIiCiAgICAgICAgICBkZXNjcmlwdGlvbiAiV2ViIENNUyBmb3IgTWVkcG9pbnQgYXBwbGljYXRpb24uIgogICAgICAgIAogICAgICAgICAgY29tV2ViQWRkcmVzcyA9IGNvbXBvbmVudCAiV2ViIENNUyBBZGRyZXNzIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIlJlYWN0IEpTIHdpdGggVHlwZXNjcmlwdCIKICAgICAgICAgICAgdGFncyAiV2ViIgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiV2ViIENNUyBBZGRyZXNzIHNjcmVlbi4iCiAgICAgICAgICAKICAgICAgICAgICAgLT4gY29tQmZmV2ViQWRkcmVzcyAiTWFuZ2UgQWRkcmVzcyBtYXN0ZXIgZGF0YSIKICAgICAgICAgIH0KICAgICAgICAgIGNvbVdlYkRvY3RvciA9IGNvbXBvbmVudCAiV2ViIENNUyBMaXN0IERvY3RvciIgewogICAgICAgICAgICB0ZWNobm9sb2d5ICJSZWFjdCBKUyB3aXRoIFR5cGVzY3JpcHQiCiAgICAgICAgICAgIHRhZ3MgIldlYiIKICAgICAgICAgICAgZGVzY3JpcHRpb24gIldlYiBDTVMgTGlzdCBEb2N0b3Igc2NyZWVuLiIKICAgICAgICAgIAogICAgICAgICAgICAtPiBjb21CZmZXZWJVc2Vyc01hbmFnZW1lbnQgIk1hbmdlIEFkZHJlc3MgbWFzdGVyIGRhdGEiCiAgICAgICAgICB9CiAgICAgICAgICBjb21XZWJGYXNrZXMgPSBjb21wb25lbnQgIldlYiBDTVMgRmFza2VzIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIlJlYWN0IEpTIHdpdGggVHlwZXNjcmlwdCIKICAgICAgICAgICAgdGFncyAiV2ViIgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiV2ViIENNUyBGYXNrZXMgc2NyZWVuLiIKICAgICAgICAgIAogICAgICAgICAgICAtPiBjb21CZmZXZWJGYXNrZXMgIk1hbmdlIEZhc2tlcyBtYXN0ZXIgZGF0YSIKICAgICAgICAgIH0KICAgICAgICAgIGNvbVdlYkxvZ2luID0gY29tcG9uZW50ICJXZWIgQ01TIExvZ2luIiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIlJlYWN0IEpTIHdpdGggVHlwZXNjcmlwdCIKICAgICAgICAgICAgdGFncyAiV2ViIgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiV2ViIENNUyBMb2dpbiBzY3JlZW4uIgogICAgICAgICAgCiAgICAgICAgICAgICAgLT4gY29tQmZmV2ViQXV0aCAiTG9naW4gdmlhIEVtYWlsIgogICAgICAgICAgfQogICAgICAgICAgY29tV2ViUGF5bWVudCA9IGNvbXBvbmVudCAiV2ViIENNUyBQYXltZW50IiB7CiAgICAgICAgICAgIHRlY2hub2xvZ3kgIlJlYWN0IEpTIHdpdGggVHlwZXNjcmlwdCIKICAgICAgICAgICAgdGFncyAiV2ViIgogICAgICAgICAgICBkZXNjcmlwdGlvbiAiV2ViIENNUyBQYXltZW50IHNjcmVlbi4iCiAgICAgICAgICAKICAgICAgICAgICAgLT4gY29tQmZmV2ViUGF5bWVudCAiTWFuYWdlIFBheW1lbnQgbWFzdGVyIGRhdGEiCiAgICAgICAgICB9CiAgICAgICAgICBjb21XZWJQb2xpID0gY29tcG9uZW50ICJXZWIgQ01TIFBvbGkiIHsKICAgICAgICAgICAgdGVjaG5vbG9neSAiUmVhY3QgSlMgd2l0aCBUeXBlc2NyaXB0IgogICAgICAgICAgICB0YWdzICJXZWIiCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJXZWIgQ01TIFBvbGkgc2NyZWVuLiIKICAgICAgICAgIAogICAgICAgICAgICAtPiBjb21CZmZXZWJQb2xpICJNYW5nZSBQb2xpIG1hc3RlciBkYXRhIgogICAgICAgICAgfQogICAgICAgICAgY29tV2ViUmVzZXJ2YXRpb24gPSBjb21wb25lbnQgIldlYiBDTVMgUmVzZXJ2YXRpb24iIHsKICAgICAgICAgICAgdGVjaG5vbG9neSAiUmVhY3QgSlMgd2l0aCBUeXBlc2NyaXB0IgogICAgICAgICAgICB0YWdzICJXZWIiCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJXZWIgQ01TIFJlc2VydmF0aW9uIHNjcmVlbi4iCiAgICAgICAgICAKICAgICAgICAgICAgLT4gY29tQmZmV2ViUmVzZXJ2YXRpb24gIk1hbmdlIHJlc2VydmF0aW9uIGRhdGEiCiAgICAgICAgICB9CiAgICAgICAgICBjb21XZWJTZXJ2aWNlcyA9IGNvbXBvbmVudCAiV2ViIENNUyBTZXJ2aWNlcyIgewogICAgICAgICAgICB0ZWNobm9sb2d5ICJSZWFjdCBKUyB3aXRoIFR5cGVzY3JpcHQiCiAgICAgICAgICAgIHRhZ3MgIldlYiIKICAgICAgICAgICAgZGVzY3JpcHRpb24gIldlYiBDTVMgU2VydmljZXMgc2NyZWVuLiIKICAgICAgICAgIAogICAgICAgICAgICAtPiBjb21CZmZXZWJTZXJ2aWNlcyAiTWFuZ2UgU2VydmljZXMgbWFzdGVyIGRhdGEiCiAgICAgICAgICB9CiAgICAgICAgICBjb21XZWJVc2VyTWFuYWdlbWVudCA9IGNvbXBvbmVudCAiV2ViIENNUyBVc2VyIE1hbmFnZW1lbnQiIHsKICAgICAgICAgICAgdGVjaG5vbG9neSAiUmVhY3QgSlMgd2l0aCBUeXBlc2NyaXB0IgogICAgICAgICAgICB0YWdzICJXZWIiCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJXZWIgQ01TIFVzZXIgTWFuYWdlbWVudCBzY3JlZW4uIgogICAgICAgICAgCiAgICAgICAgICAgIC0+IGNvbUJmZldlYlVzZXJzTWFuYWdlbWVudCAiTWFuZ2UgdXNlcidzIGRhdGEiCiAgICAgICAgICB9CiAgICAgICAgfQogICAgfQogICAgcFBhdGllbnQgPSBwZXJzb24gIlBhdGllbnQiIHsKICAgICAgZGVzY3JpcHRpb24gIlVzZXMgdGhlIG1vYmlsZSBhcHAgdG8gYm9vayBhbiBhcHBvaW50bWVudCwgdmlldyBhcHBvaW50bWVudCBkZXRhaWxzLCBhbmQgcmVjZWl2ZSBub3RpZmljYXRpb25zLiIKICAgIAogICAgICAtPiBjb21Nb2JpbGVMb2dpbiAiUGF0aWVudCBjYW4gbG9naW4gaW50byBtb2JpbGUgYXBwIHVzaW5nIGVtYWlsLiIKICAgICAgLT4gY29tTW9iaWxlUmVnaXN0ZXIgIlBhdGllbnQgbXVzdCBSZWdpc3RlciBpZiBwYXRpZW50IGlzIG5vdCByZWdpc3RlcmVkIGluIHRoZSBzeXN0ZW0uIgogICAgICAtPiBjb21Nb2JpbGVQcm9maWxlICJQYXRpZW50IGNhbiBtYW5hZ2UgYW5kIHVwZGF0ZSBwcm9maWxlLiIKICAgICAgLT4gY29tTW9iaWxlU2VydmljZXMgIlBhdGllbnQgY2FuIHNlYXJjaCBoZWFsdGggc2VydmljZXMgYnkga2V5d29yZC4iCiAgICAgIC0+IGNvbU1vYmlsZVJlc2VydmF0aW9uICJQYXRpZW50IGNhbiBjcmVhdGUgcmVzZXJ2YXRpb24sIGNhbmNlbCByZXNlcnZhdGlvbiwgYW5kIHJlY2VpdmUgbm90aWZpY2F0aW9ucy4iCiAgICAgIC0+IGNvbU1vYmlsZVBheW1lbnQgIlBhdGllbnQgY2FuIG1ha2UgcGF5bWVudC4iCiAgICB9CiAgICBwU3VwZXJBZG1pbiA9IHBlcnNvbiAiU3VwZXIgQWRtaW4iIHsKICAgICAgZGVzY3JpcHRpb24gIlVzZXMgdGhlIFdlYiBDTVMgYXBwIHRvIG1hbmFnZSBhbGwgbWFzdGVyIGRhdGEgYW5kIHVzZXIgYWNjZXNzIHJpZ2h0cyIKICAgIAogICAgICAtPiBjb21XZWJMb2dpbiAiU3VwZXIgQWRtaW4gY2FuIGxvZ2luIGludG8gV2ViIENNUyBhcHAgdXNpbmcgZW1haWwuIgogICAgICAtPiBjb21XZWJVc2VyTWFuYWdlbWVudAogICAgICAtPiBjb21XZWJEb2N0b3IKICAgICAgLT4gY29tV2ViUmVzZXJ2YXRpb24gIlN1cGVyIEFkbWluIGNhbiBtYW5hZ2UgcmVzZXJ2YXRpb24gc2xvdCIKICAgICAgLT4gY29tV2ViRmFza2VzICJTdXBlciBBZG1pbiBjYW4gbWFuYWdlIENSVUQgRmFza2VzIERhdGEgTWFzdGVyIgogICAgICAtPiBjb21XZWJQb2xpICJTdXBlciBBZG1pbiBjYW4gbWFuYWdlIENSVUQgUG9saSBEYXRhIE1hc3RlciIKICAgICAgLT4gY29tV2ViU2VydmljZXMgIlN1cGVyIEFkbWluIGNhbiBtYW5hZ2UgQ1JVRCBTZXJ2aWNlcyBEYXRhIE1hc3RlciIKICAgICAgLT4gY29tV2ViQWRkcmVzcyAiU3VwZXIgQWRtaW4gY2FuIG1hbmFnZSBDUlVEIEFkZHJlc3MgRGF0YSBNYXN0ZXIiCiAgICB9CiAgICBwQWRtaW4gPSBwZXJzb24gIkFkbWluIiB7CiAgICAgIGRlc2NyaXB0aW9uICJVc2VzIHRoZSBXZWIgQ01TIGFwcCB0byBtYW5hZ2UgbWFzdGVyIGRhdGEsIHNjaGVkdWxlcywgcmVzZXJ2YXRpb24gc2xvdHMgYW5kIHBheW1lbnRzIgogICAgCiAgICAgIC0+IGNvbVdlYkxvZ2luICJBZG1pbiBjYW4gbG9naW4gaW50byBXZWIgQ01TIGFwcCB1c2luZyBlbWFpbC4iCiAgICAgIC0+IGNvbVdlYlVzZXJNYW5hZ2VtZW50ICJBZG1pbiBjYW4gbWFuYWdlIHVzZXIncyBkYXRhIgogICAgICAtPiBjb21XZWJSZXNlcnZhdGlvbiAiQWRtaW4gY2FuIG1hbmFnZSByZXNlcnZhdGlvbiBzbG90IgogICAgICAtPiBjb21XZWJGYXNrZXMgIkFkbWluIGNhbiBtYW5hZ2UgRmFza2VzIERhdGEgTWFzdGVyIgogICAgICAtPiBjb21XZWJQb2xpICJBZG1pbiBjYW4gbWFuYWdlIFBvbGkgRGF0YSBNYXN0ZXIiCiAgICAgIC0+IGNvbVdlYlNlcnZpY2VzICJBZG1pbiBjYW4gbWFuYWdlIFNlcnZpY2VzIERhdGEgTWFzdGVyIgogICAgICAtPiBjb21XZWJBZGRyZXNzICJBZG1pbiBjYW4gbWFuYWdlIEFkZHJlc3MgRGF0YSBNYXN0ZXIiCiAgICAgIC0+IGNvbVdlYlBheW1lbnQgIkFkbWluIGNhbiBzZWUgQmlsbGluZyBhbmQgcGF5bWVudCB2YWxpZGF0aW9uIgogICAgfQogICAgcERvY3RvciA9IHBlcnNvbiAiRG9jdG9yIiB7CiAgICAgIGRlc2NyaXB0aW9uICJVc2VzIHRoZSBXZWIgQ01TIGFwcCB0byBwcm92aWRpbmcgcmVzZXJ2YXRpb24gc2xvdHMsIGFwcHJvdmluZyByZXNlcnZhdGlvbnMsIHByb3ZpZGluZyBjb25zdWx0YXRpb25zIGFuZCBwcmVzY3JpcHRpb25zLiIKICAgIAogICAgICAtPiBjb21XZWJMb2dpbiAiRG9jdG9yIGNhbiBsb2dpbiBpbnRvIFdlYiBDTVMgYXBwIHVzaW5nIGVtYWlsLiIKICAgICAgLT4gY29tV2ViUmVzZXJ2YXRpb24gIkRvY3RvciBjYW4gcHJvdmlkaW5nIHJlc2VydmF0aW9uIHNsb3RzLCBhcHByb3ZpbmcgcmVzZXJ2YXRpb25zIgogICAgfQoKICAgIHNzRXh0ZXJuYWxNZXNzYWdpbmcgLT4gcFBhdGllbnQgIlNlbmQgcHVzaCBub3RpZmljYXRpb25zIHRvIgogICAgc3NFeHRlcm5hbE1lc3NhZ2luZyAtPiBwU3VwZXJBZG1pbiAiU2VuZCBwdXNoIG5vdGlmaWNhdGlvbnMgdG8iCiAgICBzc0V4dGVybmFsTWVzc2FnaW5nIC0+IHBBZG1pbiAiU2VuZCBwdXNoIG5vdGlmaWNhdGlvbnMgdG8iCiAgICBzc0V4dGVybmFsTWVzc2FnaW5nIC0+IHBEb2N0b3IgIlNlbmQgcHVzaCBub3RpZmljYXRpb25zIHRvIgogIH0KCiAgdmlld3MgewogICAgZHluYW1pYyBjTW9iaWxlIHsKICAgICAgICB0aXRsZSAiW01vYmlsZV1bQXV0aF0gTG9naW4gYW5kIFJlZ2lzdGVyIgogICAgICAgIGRlc2NyaXB0aW9uICJQYXRpZW50IGNvdWxkIGxvZ2luIGludG8gbW9iaWxlIGFwcCB1c2luZyBlbWFpbC9wYXNzd29yZCIKICAgIAogICAgICAgIHBQYXRpZW50IC0+IGNvbU1vYmlsZVJlZ2lzdGVyCiAgICAgICAgY29tTW9iaWxlUmVnaXN0ZXIgLT4gY29tQmZmTW9iaWxlUmVnaXN0ZXIgIlJlZ2lzdGVyIHdpdGggZW1haWwgYW5kIHBhc3N3b3JkIgogICAgICAgIGNvbUJmZk1vYmlsZVJlZ2lzdGVyIC0+IGNvbVJlc3RVc2VyICJDaGVjayB1c2VyIGFjY291bnQgaWYgZXhpc3QiCiAgICAgICAgY29tUmVzdFVzZXIgLT4gY29tRGF0YWJhc2VVc2VyVGFibGUgIlN0b3JlIGRhdGEgdXNlciBhY291bnQiCiAgICAKICAgICAgICBwUGF0aWVudCAtPiBjb21Nb2JpbGVMb2dpbgogICAgICAgIGNvbU1vYmlsZUxvZ2luIC0+IGNvbUJmZk1vYmlsZUF1dGggIkxvZ2luIHdpdGggZW1haWwvcGFzc3dvcmQiCiAgICAKICAgICAgICBjb21CZmZNb2JpbGVBdXRoIC0+IGNvbVJlc3RVc2VyICJDaGVjayBsb2dpbiB1c2VyIGlmIGV4aXN0IgogICAgICAgIGNvbVJlc3RVc2VyIC0+IGNvbURhdGFiYXNlVXNlclRhYmxlICJHZXQgdXNlciIKICAgIAogICAgICAgIGNvbUJmZk1vYmlsZUF1dGggLT4gY29tQXV0aEVtYWlsTG9naW4gIkxvZ2luIHdpdGggZW1haWwvcGFzc3dvcmQiCiAgICAgICAgY29tQXV0aEVtYWlsTG9naW4gLT4gc3NFeHRlcm5hbEF1dGggIkxvZ2luIHVzaW5nIGV4dGVybmFsIGF1dGgiCiAgICAKICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICB9CiAgICBkeW5hbWljIGNNb2JpbGUgewogICAgICB0aXRsZSAiW01vYmlsZV1bTWFuYWdlIFByb2ZpbGVdIFByb2ZpbGUiCiAgICAgIGRlc2NyaXB0aW9uICJQYXRpZW50IGNvdWxkIGxvZ2luIGludG8gbW9iaWxlIGFwcCB1c2luZyBlbWFpbC9wYXNzd29yZCIKICAgIAogICAgICBwUGF0aWVudCAtPiBjb21Nb2JpbGVQcm9maWxlCiAgICAgIGNvbU1vYmlsZVByb2ZpbGUgLT4gY29tQmZmTW9iaWxlUHJvZmlsZSAiTWFrZXMgQVBJIGNhbGwgdG8gW0pTT04vSFRUUFNdIgogICAgICBjb21CZmZNb2JpbGVQcm9maWxlIC0+IGNvbVJlc3RQcm9maWxlICJNYW5nZSB1c2VyIHByb2ZpbGUiCiAgICAgIGNvbVJlc3RQcm9maWxlIC0+IGNvbURhdGFiYXNlVXNlclRhYmxlICJSZWFkcyBmcm9tIGFuZCB3cml0ZSB0byIKICAgICAgY29tUmVzdFByb2ZpbGUgLT4gc3NFeHRlcm5hbE1lc3NhZ2luZyAiQ2FsbCBub3RpZmljYXRpb25zIGlmIHN1Y2Nlc3MgdXBkYXRlIHByb2ZpbGUiCiAgICAgIHNzRXh0ZXJuYWxNZXNzYWdpbmcgLT4gcFBhdGllbnQgIlNlbmQgcHVzaCBub3RpZmljYXRpb25zIgogICAgLy8gIHNzRXh0ZXJuYWxNZXNzYWdpbmcgLT4gY29tTW9iaWxlUHJvZmlsZSAiU2VuZCBwdXNoIG5vdGlmaWNhdGlvbnMiCiAgICAvLyAgY29tTW9iaWxlUHJvZmlsZSAtPiBwUGF0aWVudCAiU2VuZCBub3RpZmljYXRpb24iCiAgICAKICAgICAgYXV0b2xheW91dCBscgogICAgfQogICAgZHluYW1pYyBjTW9iaWxlIHsKICAgICAgdGl0bGUgIltNb2JpbGVdW1NlcnZpY2VzXSBTZWFyY2ggSGVhbHRoIFNlcnZpY2VzIgogICAgICBkZXNjcmlwdGlvbiAiUGF0aWVudCBjYW4gaGVhbHRoIHNlYXJjaCBzZXJ2aWNlcyBhdmFpbGFibGUgb24gbWVkcG9pbnQiCiAgICAKICAgICAgcFBhdGllbnQgLT4gY29tTW9iaWxlU2VydmljZXMKICAgICAgY29tTW9iaWxlU2VydmljZXMgLT4gY29tQmZmTW9iaWxlU2VydmljZXMgIk1ha2VzIEFQSSBjYWxsIHRvIFtKU09OL0hUVFBTXSIKICAgICAgY29tQmZmTW9iaWxlU2VydmljZXMgLT4gY29tUmVzdFNlcnZpY2VzICJHZXQgaGVhbHRoIHNlcnZpY2VzIG9yIFNlYXJjaCBoZWFsdGggc2VydmljZXMgYnkga2V5d29yZCIKICAgICAgY29tUmVzdFNlcnZpY2VzIC0+IGNvbURhdGFiYXNlU2VydmljZXNUYWJsZSAiUmVhZHMgZGF0YSBzZXJ2aWNlcyIKICAgIAogICAgICBhdXRvbGF5b3V0IGxyCiAgICB9CiAgICBkeW5hbWljIGNNb2JpbGUgewogICAgICB0aXRsZSAiW01vYmlsZV1bUmVzZXJ2YXRpb25dIFJlc2VydmF0aW9uIgogICAgICBkZXNjcmlwdGlvbiAiUGF0aWVudCBjYW4gY3JlYXRlIHJlc2VydmF0aW9uIG9uIG1lZHBvaW50IgogICAgCiAgICAgIHBQYXRpZW50IC0+IGNvbU1vYmlsZVJlc2VydmF0aW9uCiAgICAgIGNvbU1vYmlsZVJlc2VydmF0aW9uIC0+IGNvbUJmZk1vYmlsZVJlc2VydmF0aW9uICJNYWtlcyBBUEkgY2FsbCB0byBbSlNPTi9IVFRQU10iCiAgICAgIGNvbUJmZk1vYmlsZVJlc2VydmF0aW9uIC0+IGNvbVJlc3RSZXNlcnZhdGlvbiAiQ3JlYXRlIHJlc2VydmF0aW9uIgogICAgCiAgICAgIGNvbVJlc3RSZXNlcnZhdGlvbiAtPiBjb21EYXRhYmFzZVJlc2VydmF0aW9uVGFibGUgIlJlYWRzIGZyb20gYW5kIFdyaXRlcyB0bywgaWYgcGF5bWVudHMgaXMgZmFpbGVkL2NhbmNlbGxlZCBvciByZXNlcnZhdGlvbiBpcyBjYW5jZWxsZWQgcm9sbGJhY2siCiAgICAgIGNvbVJlc3RSZXNlcnZhdGlvbiAtPiBzc0V4dGVybmFsTWVzc2FnaW5nCiAgICAgIHNzRXh0ZXJuYWxNZXNzYWdpbmcgLT4gcFBhdGllbnQgIlNlbmQgcHVzaCBub3RpZmljYXRpb25zIgogICAgCiAgICAgIGF1dG9sYXlvdXQgbHIKICAgIH0KICAgIGR5bmFtaWMgY1dlYiB7CiAgICAgIHRpdGxlICJbTW9iaWxlXVtQYXltZW50XSBQYXltZW50IgogICAgICBkZXNjcmlwdGlvbiAiUGF0aWVudCBjYW4gbWFrZSBwYXltZW50IG9uIG1lZHBvaW50IgogICAgCiAgICAgIHBQYXRpZW50IC0+IGNvbU1vYmlsZVBheW1lbnQKICAgICAgY29tTW9iaWxlUGF5bWVudCAtPiBjb21CZmZNb2JpbGVQYXltZW50ICJNYWtlcyBBUEkgY2FsbCB0byBbSlNPTi9IVFRQU10iCiAgICAgIGNvbUJmZk1vYmlsZVBheW1lbnQgLT4gY29tUmVzdFRyYW5zYWN0aW9uCiAgICAgIGNvbVJlc3RUcmFuc2FjdGlvbiAtPiBjb21EYXRhYmFzZVRyYW5zYWN0aW9uVGFibGUgIlJlYWRzIGZyb20gYW5kIFdyaXRlcyB0byIKICAgICAgY29tQmZmTW9iaWxlUGF5bWVudCAtPiBjb21SZXN0UGF5bWVudCAiTWFrZSBwYXltZW50cyIKICAgICAgY29tUmVzdFBheW1lbnQgLT4gc3NFeHRlcm5hbFBheW1lbnQgIk1ha2UgcGF5bWVudHMgdG8gZXh0ZXJuYWwgYW5kIGdldCBwYXltZW50cyBzdGF0dXMiCiAgICAgIGNvbVJlc3RQYXltZW50IC0+IGNvbVJlc3RUcmFuc2FjdGlvbiAiVXBkYXRlIHN0YXR1cyB0cmFuc2FjdGlvbiIKICAgICAgY29tUmVzdFBheW1lbnQgLT4gc3NFeHRlcm5hbE1lc3NhZ2luZyAiQ2FsbCBub3RpZmljYXRpb24gaWYgc3VjY2Vzcy9mYWlsZWQgcGF5bWVudHMiCiAgICAgIHNzRXh0ZXJuYWxNZXNzYWdpbmcgLT4gcFBhdGllbnQKICAgIAogICAgICBhdXRvbGF5b3V0IGxyCiAgICB9CiAgICBkeW5hbWljIGNXZWIgewogICAgICAgIHRpdGxlICJbV2ViIENNU11bQXV0aF0gTG9naW4iCiAgICAgICAgZGVzY3JpcHRpb24gIlN1cGVyIEFkbWluLCBBZG1pbiwgYW5kIERvY3RvciBjb3VsZCBsb2dpbiBpbnRvIFdlYiBDTVMgYXBwIHVzaW5nIGVtYWlsL3Bhc3N3b3JkIgogICAgCiAgICAgICAgcFN1cGVyQWRtaW4gLT4gY29tV2ViTG9naW4KICAgICAgICBwQWRtaW4gLT4gY29tV2ViTG9naW4KICAgICAgICBwRG9jdG9yIC0+IGNvbVdlYkxvZ2luCiAgICAgICAgY29tV2ViTG9naW4gLT4gY29tQmZmV2ViQXV0aCAiTG9naW4gd2l0aCBlbWFpbC9wYXNzd29yZCIKICAgIAogICAgICAgIGNvbUJmZldlYkF1dGggLT4gY29tUmVzdFVzZXIgIkNoZWNrIGxvZ2luIHVzZXIgaWYgZXhpc3QiCiAgICAgICAgY29tUmVzdFVzZXIgLT4gY29tRGF0YWJhc2VVc2VyVGFibGUgIkdldCB1c2VyIgogICAgCiAgICAgICAgY29tQmZmV2ViQXV0aCAtPiBjb21BdXRoRW1haWxMb2dpbkludGVybmFsICJMb2dpbiB3aXRoIGVtYWlsL3Bhc3N3b3JkIgogICAgCiAgICAgICAgYXV0b2xheW91dCBscgogICAgfQogICAgZHluYW1pYyBjV2ViIHsKICAgICAgdGl0bGUgIltXZWIgQ01TXVtVc2VyIE1hbmFnZW1lbnRdIFVzZXIgTWFuYWdlbWVudCIKICAgICAgZGVzY3JpcHRpb24gIkFkbWluIGNhbiBtYW5hZ2UgdXNlcidzIGRhdGEgQ1JVRCBhbmQgYWNjZXNzIHJpZ2h0cyIKICAgIAogICAgICBwU3VwZXJBZG1pbiAtPiBjb21XZWJVc2VyTWFuYWdlbWVudCAiQWRtaW4gY2FuIG1hbmFnZSBhbGwgdXNlcidzIGRhdGEgQ1JVRCBhbmQgYWNjZXNzIHJpZ2h0cyIKICAgICAgcEFkbWluIC0+IGNvbVdlYlVzZXJNYW5hZ2VtZW50ICJBZG1pbiBjYW4gbWFuYWdlIHVzZXIncyhwYXRpZW50KSBkYXRhIgogICAgICBjb21XZWJVc2VyTWFuYWdlbWVudCAtPiBjb21CZmZXZWJVc2Vyc01hbmFnZW1lbnQgIk1ha2VzIEFQSSBjYWxsIHRvIFtKU09OL0hUVFBTXSIKICAgICAgY29tQmZmV2ViVXNlcnNNYW5hZ2VtZW50IC0+IGNvbVJlc3RVc2VyICJNYW5nZSB1c2VyJ3MgZGF0YSIKICAgICAgY29tUmVzdFVzZXIgLT4gY29tRGF0YWJhc2VVc2VyVGFibGUgIlJlYWRzIGZyb20gYW5kIHdyaXRlcyB0byIKICAgIAogICAgICBhdXRvbGF5b3V0IGxyCiAgICB9CiAgICBkeW5hbWljIGNXZWIgewogICAgICB0aXRsZSAiW1dlYiBDTVNdW0RhdGEgRG9jdG9yXSBEb2N0b3IiCiAgICAgIGRlc2NyaXB0aW9uICJTdXBlciBBZG1pbiBjYW4gc2VlIGxpc3QgZG9jdG9yIGFuZCBtYW5hZ2UgQ1JVRCBEYXRhIERvY3RvciIKICAgIAogICAgICBwU3VwZXJBZG1pbiAtPiBjb21XZWJEb2N0b3IgIlN1cGVyIEFkbWluIGNhbiBzZWUgdGhlIGxpc3Qgb2YgRG9jdG9yIGRhdGEgYW5kIGNhbiBtYW5hZ2UgaXQiCiAgICAgIGNvbVdlYkRvY3RvciAtPiBjb21CZmZXZWJVc2Vyc01hbmFnZW1lbnQgIk1ha2VzIEFQSSBjYWxsIHRvIFtKU09OL0hUVFBTXSIKICAgICAgY29tQmZmV2ViVXNlcnNNYW5hZ2VtZW50IC0+IGNvbVJlc3RVc2VyICJSZXRyaWV2aW5nIGRhdGEgZG9jdG9yIGFuZCBtYW5hZ2UgQ1JVRCBkYXRhIGRvY3RvciIKICAgICAgY29tUmVzdFVzZXIgLT4gY29tRGF0YWJhc2VVc2VyVGFibGUgIlJlYWRzIGZyb20gYW5kIFdyaXRlcyB0byIKICAgIAogICAgICBhdXRvbGF5b3V0IGxyCiAgICB9CiAgICBkeW5hbWljIGNXZWIgewogICAgICB0aXRsZSAiW1dlYiBDTVNdW0RhdGEgTWFzdGVyXSBBZGRyZXNzIgogICAgICBkZXNjcmlwdGlvbiAiQWRtaW4gYW5kIFN1cGVyIEFkbWluIGNhbiBtYW5hZ2UgQWRkcmVzcyBEYXRhIE1hc3RlciBvbiBtZWRwb2ludCIKICAgIAogICAgICBwQWRtaW4gLT4gY29tV2ViQWRkcmVzcwogICAgICBwU3VwZXJBZG1pbiAtPiBjb21XZWJBZGRyZXNzCiAgICAgIGNvbVdlYkFkZHJlc3MgLT4gY29tQmZmV2ViQWRkcmVzcyAiTWFrZXMgQVBJIGNhbGwgdG8gW0pTT04vSFRUUFNdIgogICAgICBjb21CZmZXZWJBZGRyZXNzIC0+IGNvbVJlc3RBZGRyZXNzCiAgICAgIGNvbVJlc3RBZGRyZXNzIC0+IGNvbURhdGFiYXNlQWRkcmVzc1RhYmxlICJSZWFkcyBmcm9tIGFuZCBXcml0ZXMgdG8iCiAgICAKICAgICAgYXV0b2xheW91dCBscgogICAgfQogICAgZHluYW1pYyBjV2ViIHsKICAgICAgdGl0bGUgIltXZWIgQ01TXVtEYXRhIE1hc3Rlcl0gRmFza2VzIgogICAgICBkZXNjcmlwdGlvbiAiQWRtaW4gYW5kIFN1cGVyIEFkbWluIGNhbiBtYW5hZ2UgZmFza2VzIG9uIG1lZHBvaW50IgogICAgCiAgICAgIHBBZG1pbiAtPiBjb21XZWJGYXNrZXMKICAgICAgcFN1cGVyQWRtaW4gLT4gY29tV2ViRmFza2VzCiAgICAgIGNvbVdlYkZhc2tlcyAtPiBjb21CZmZXZWJGYXNrZXMgIk1ha2VzIEFQSSBjYWxsIHRvIFtKU09OL0hUVFBTXSIKICAgICAgY29tQmZmV2ViRmFza2VzIC0+IGNvbVJlc3RGYXNrZXMKICAgICAgY29tUmVzdEZhc2tlcyAtPiBjb21EYXRhYmFzZUZhc2tlc1RhYmxlICJSZWFkcyBmcm9tIGFuZCBXcml0ZXMgdG8iCiAgICAKICAgICAgYXV0b2xheW91dCBscgogICAgfQogICAgZHluYW1pYyBjV2ViIHsKICAgICAgdGl0bGUgIltXZWIgQ01TXVtEYXRhIE1hc3Rlcl0gUG9saSIKICAgICAgZGVzY3JpcHRpb24gIkFkbWluIGFuZCBTdXBlciBBZG1pbiBjYW4gbWFuYWdlIFBvbGkgRGF0YSBNYXN0ZXIgb24gbWVkcG9pbnQiCiAgICAKICAgICAgcEFkbWluIC0+IGNvbVdlYlBvbGkKICAgICAgcFN1cGVyQWRtaW4gLT4gY29tV2ViUG9saQogICAgICBjb21XZWJQb2xpIC0+IGNvbUJmZldlYlBvbGkgIk1ha2VzIEFQSSBjYWxsIHRvIFtKU09OL0hUVFBTXSIKICAgICAgY29tQmZmV2ViUG9saSAtPiBjb21SZXN0UG9saQogICAgICBjb21SZXN0UG9saSAtPiBjb21EYXRhYmFzZVBvbGlUYWJsZSAiUmVhZHMgZnJvbSBhbmQgV3JpdGVzIHRvIgogICAgCiAgICAgIGF1dG9sYXlvdXQgbHIKICAgIH0KICAgIGR5bmFtaWMgY1dlYiB7CiAgICAgIHRpdGxlICJbV2ViIENNU11bRGF0YSBNYXN0ZXJdIFNlcnZpY2VzIgogICAgICBkZXNjcmlwdGlvbiAiQWRtaW4gYW5kIFN1cGVyIEFkbWluIGNhbiBtYW5hZ2UgUG9saSBEYXRhIE1hc3RlciBvbiBtZWRwb2ludCIKICAgIAogICAgICBwQWRtaW4gLT4gY29tV2ViU2VydmljZXMKICAgICAgcFN1cGVyQWRtaW4gLT4gY29tV2ViU2VydmljZXMKICAgICAgY29tV2ViU2VydmljZXMgLT4gY29tQmZmV2ViU2VydmljZXMgIk1ha2VzIEFQSSBjYWxsIHRvIFtKU09OL0hUVFBTXSIKICAgICAgY29tQmZmV2ViU2VydmljZXMgLT4gY29tUmVzdFNlcnZpY2VzCiAgICAgIGNvbVJlc3RTZXJ2aWNlcyAtPiBjb21EYXRhYmFzZVNlcnZpY2VzVGFibGUgIlJlYWRzIGZyb20gYW5kIFdyaXRlcyB0byIKICAgIAogICAgICBhdXRvbGF5b3V0IGxyCiAgICB9CiAgICBkeW5hbWljIGNXZWIgewogICAgICB0aXRsZSAiW1dlYiBDTVNdW1Jlc2VydmF0aW9uXSBSZXNlcnZhdGlvbiIKICAgICAgZGVzY3JpcHRpb24gIkFkbWluIGNhbiBtYW5hZ2UgcmVzZXJ2YXRpb24gb24gbWVkcG9pbnQiCiAgICAKICAgICAgcEFkbWluIC0+IGNvbVdlYlJlc2VydmF0aW9uCiAgICAgIHBTdXBlckFkbWluIC0+IGNvbVdlYlJlc2VydmF0aW9uCiAgICAgIHBEb2N0b3IgLT4gY29tV2ViUmVzZXJ2YXRpb24KICAgICAgY29tV2ViUmVzZXJ2YXRpb24gLT4gY29tQmZmV2ViUmVzZXJ2YXRpb24gICJNYWtlcyBBUEkgY2FsbCB0byBbSlNPTi9IVFRQU10iCiAgICAgIGNvbUJmZldlYlJlc2VydmF0aW9uIC0+IGNvbVJlc3RSZXNlcnZhdGlvbgogICAgICBjb21SZXN0UmVzZXJ2YXRpb24gLT4gY29tRGF0YWJhc2VSZXNlcnZhdGlvblRhYmxlICJSZWFkcyBmcm9tIGFuZCBXcml0ZXMgdG8iCiAgICAKICAgICAgYXV0b2xheW91dCBscgogICAgfQogICAgZHluYW1pYyBjV2ViIHsKICAgICAgdGl0bGUgIltXZWIgQ01TXVtQYXltZW50XSBQYXltZW50IgogICAgICBkZXNjcmlwdGlvbiAiQWRtaW4gY2FuIHNlZSBiaWxsaW5nIGFuZCBwYXltZW50IHZhbGlkYXRpb24gb24gbWVkcG9pbnQiCiAgICAKICAgICAgcEFkbWluIC0+IGNvbVdlYlBheW1lbnQKICAgICAgY29tV2ViUGF5bWVudCAtPiBjb21CZmZXZWJQYXltZW50ICAiTWFrZXMgQVBJIGNhbGwgdG8gW0pTT04vSFRUUFNdIgogICAgICBjb21CZmZXZWJQYXltZW50IC0+IGNvbVJlc3RUcmFuc2FjdGlvbgogICAgICBjb21SZXN0VHJhbnNhY3Rpb24gLT4gY29tRGF0YWJhc2VUcmFuc2FjdGlvblRhYmxlICJSZWFkcyBmcm9tIGFuZCBXcml0ZSB0byIKICAgICAgY29tQmZmV2ViUGF5bWVudCAtPiBjb21SZXN0UGF5bWVudAogICAgICBjb21SZXN0UGF5bWVudCAtPiBzc0V4dGVybmFsUGF5bWVudCAiR2V0IHBheW1lbnQgc3RhdHVzIgogICAgICBjb21SZXN0UGF5bWVudCAtPiBjb21SZXN0VHJhbnNhY3Rpb24gIlVwZGF0ZSBzdGF0dXMgcGF5bWVudCBpbiB0cmFuc2FjdGlvbiIKICAgICAgY29tUmVzdFBheW1lbnQgLT4gc3NFeHRlcm5hbE1lc3NhZ2luZyAiQ2FsbCBub3RpZmljYXRpb24gaWYgc3VjY2Vzcy9mYWlsZWQgVXBkYXRlIHN0YXR1cyBwYXltZW50IgogICAgICBzc0V4dGVybmFsTWVzc2FnaW5nIC0+IHBBZG1pbgogICAgCiAgICAgIGF1dG9sYXlvdXQgbHIKICAgIH0KCiAgICBzeXN0ZW1Db250ZXh0IHNzTWVkcG9pbnQgewogICAgICBpbmNsdWRlICoKICAgICAgYXV0b2xheW91dCBscgogICAgfQoKICAgIGNvbnRhaW5lciBzc01lZHBvaW50IHsKICAgICAgaW5jbHVkZSAqCiAgICAgIGF1dG9sYXlvdXQgbHIKICAgIH0KCiAgICBzdHlsZXMgewogICAgICBlbGVtZW50ICJFbGVtZW50IiB7CiAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICB9CiAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgIGJhY2tncm91bmQgIzA1NTI3ZAogICAgICAgIHNoYXBlIHBlcnNvbgogICAgICB9CiAgICAgIGVsZW1lbnQgIlNvZnR3YXJlIFN5c3RlbSIgewogICAgICAgIGJhY2tncm91bmQgIzA2NjI5NgogICAgICB9CiAgICAgIGVsZW1lbnQgIkNvbnRhaW5lciIgewogICAgICAgIGJhY2tncm91bmQgIzA3NzNhZgogICAgICB9CiAgICAgIGVsZW1lbnQgIkNvbXBvbmVudCIgewogICAgICAgIGJhY2tncm91bmQgIzg1YmJmMAogICAgICAgIGNvbG9yICMwMDAwMDAKICAgICAgfQogICAgICBlbGVtZW50ICJFeHRlcm5hbCBTeXN0ZW0iIHsKICAgICAgICBiYWNrZ3JvdW5kICM5OTk5OTkKICAgICAgfQogICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgIH0KICAgICAgZWxlbWVudCAiUHViU3ViIiB7CiAgICAgICAgc2hhcGUgUGlwZQogICAgICB9CiAgICAgIGVsZW1lbnQgIkNhY2hlIiB7CiAgICAgICAgc2hhcGUgSGV4YWdvbgogICAgICB9CiAgICAgIGVsZW1lbnQgIlNjcmVlbiIgewogICAgICAgIHNoYXBlIE1vYmlsZURldmljZVBvcnRyYWl0CiAgICAgIH0KICAgICAgZWxlbWVudCAiV2ViIiB7CiAgICAgICAgc2hhcGUgV2ViQnJvd3NlcgogICAgICB9CiAgICB9CgogICAgdGhlbWUgZGVmYXVsdAogIH0KfQ=="
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Dynamic-013",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : {
+        "elements" : [ {
+          "color" : "#ffffff",
+          "tag" : "Element"
+        }, {
+          "background" : "#05527d",
+          "shape" : "Person",
+          "tag" : "Person"
+        }, {
+          "background" : "#066296",
+          "tag" : "Software System"
+        }, {
+          "background" : "#0773af",
+          "tag" : "Container"
+        }, {
+          "background" : "#85bbf0",
+          "color" : "#000000",
+          "tag" : "Component"
+        }, {
+          "background" : "#999999",
+          "tag" : "External System"
+        }, {
+          "shape" : "Cylinder",
+          "tag" : "Database"
+        }, {
+          "shape" : "Pipe",
+          "tag" : "PubSub"
+        }, {
+          "shape" : "Hexagon",
+          "tag" : "Cache"
+        }, {
+          "shape" : "MobileDevicePortrait",
+          "tag" : "Screen"
+        }, {
+          "shape" : "WebBrowser",
+          "tag" : "Web"
+        } ]
+      },
+      "terminology" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ]
+    },
+    "containerViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 4209,
+        "width" : 4570
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 3900,
+        "y" : 3074
+      }, {
+        "id" : "2",
+        "x" : 3900,
+        "y" : 3674
+      }, {
+        "id" : "3",
+        "x" : 200,
+        "y" : 1615
+      }, {
+        "id" : "5",
+        "x" : 3900,
+        "y" : 1965
+      }, {
+        "id" : "13",
+        "x" : 3150,
+        "y" : 1965
+      }, {
+        "id" : "25",
+        "x" : 3150,
+        "y" : 1365
+      }, {
+        "id" : "31",
+        "x" : 3150,
+        "y" : 2565
+      }, {
+        "id" : "81",
+        "x" : 2400,
+        "y" : 2315
+      }, {
+        "id" : "115",
+        "x" : 2400,
+        "y" : 1365
+      }, {
+        "id" : "154",
+        "x" : 1650,
+        "y" : 2315
+      }, {
+        "id" : "180",
+        "x" : 1650,
+        "y" : 1365
+      }, {
+        "id" : "217",
+        "x" : 950,
+        "y" : 2265
+      }, {
+        "id" : "226",
+        "x" : 950,
+        "y" : 165
+      }, {
+        "id" : "237",
+        "x" : 950,
+        "y" : 865
+      }, {
+        "id" : "248",
+        "x" : 950,
+        "y" : 1565
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Container-001",
+      "order" : 16,
+      "relationships" : [ {
+        "id" : "120",
+        "vertices" : [ {
+          "x" : 3150,
+          "y" : 2415
+        } ]
+      }, {
+        "id" : "125"
+      }, {
+        "id" : "159"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "185"
+      }, {
+        "id" : "20",
+        "vertices" : [ {
+          "x" : 3600,
+          "y" : 2415
+        }, {
+          "x" : 3900,
+          "y" : 3044
+        } ]
+      }, {
+        "id" : "219"
+      }, {
+        "id" : "228"
+      }, {
+        "id" : "239"
+      }, {
+        "id" : "250"
+      }, {
+        "id" : "253"
+      }, {
+        "id" : "254",
+        "vertices" : [ {
+          "x" : 950,
+          "y" : 715
+        } ]
+      }, {
+        "id" : "255"
+      }, {
+        "id" : "256"
+      }, {
+        "id" : "30"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "46",
+        "vertices" : [ {
+          "x" : 3900,
+          "y" : 3524
+        } ]
+      }, {
+        "id" : "49",
+        "vertices" : [ {
+          "x" : 2850,
+          "y" : 2765
+        }, {
+          "x" : 1350,
+          "y" : 2815
+        }, {
+          "x" : 950,
+          "y" : 2815
+        } ]
+      }, {
+        "id" : "86"
+      }, {
+        "id" : "90"
+      } ],
+      "softwareSystemId" : "4"
+    } ],
+    "dynamicViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Patient could login into mobile app using email/password",
+      "dimensions" : {
+        "height" : 1561,
+        "width" : 3820
+      },
+      "elementId" : "154",
+      "elements" : [ {
+        "id" : "1",
+        "x" : 3150,
+        "y" : 771
+      }, {
+        "id" : "12",
+        "x" : 3150,
+        "y" : 171
+      }, {
+        "id" : "14",
+        "x" : 2400,
+        "y" : 771
+      }, {
+        "id" : "76",
+        "x" : 2400,
+        "y" : 171
+      }, {
+        "id" : "82",
+        "x" : 1650,
+        "y" : 771
+      }, {
+        "id" : "101",
+        "x" : 1650,
+        "y" : 171
+      }, {
+        "id" : "155",
+        "x" : 900,
+        "y" : 771
+      }, {
+        "id" : "168",
+        "x" : 900,
+        "y" : 171
+      }, {
+        "id" : "217",
+        "x" : 200,
+        "y" : 421
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-001",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "221",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Register with email and password",
+        "id" : "169",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Check user account if exist",
+        "id" : "105",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Store data user acount",
+        "id" : "77",
+        "order" : "4",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 3000,
+          "y" : 471
+        } ]
+      }, {
+        "id" : "218",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Login with email/password",
+        "id" : "156",
+        "order" : "6",
+        "response" : false
+      }, {
+        "description" : "Check login user if exist",
+        "id" : "87",
+        "order" : "7",
+        "response" : false
+      }, {
+        "description" : "Get user",
+        "id" : "77",
+        "order" : "8",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 3000,
+          "y" : 171
+        } ]
+      }, {
+        "description" : "Login with email/password",
+        "id" : "83",
+        "order" : "9",
+        "response" : false
+      }, {
+        "description" : "Login using external auth",
+        "id" : "19",
+        "order" : "10",
+        "response" : false
+      } ],
+      "title" : "[Mobile][Auth] Login and Register"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Patient could login into mobile app using email/password",
+      "dimensions" : {
+        "height" : 1861,
+        "width" : 3820
+      },
+      "elementId" : "154",
+      "elements" : [ {
+        "id" : "3",
+        "x" : 2470,
+        "y" : 771
+      }, {
+        "id" : "12",
+        "x" : 2470,
+        "y" : 171
+      }, {
+        "id" : "55",
+        "x" : 1720,
+        "y" : 771
+      }, {
+        "id" : "97",
+        "x" : 970,
+        "y" : 771
+      }, {
+        "id" : "164",
+        "x" : 220,
+        "y" : 1071
+      }, {
+        "id" : "217",
+        "x" : 3220,
+        "y" : 1025
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-002",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "222",
+        "order" : "1",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2274,
+          "y" : 1250
+        }, {
+          "x" : 866,
+          "y" : 1250
+        } ]
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "165",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Mange user profile",
+        "id" : "98",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Reads from and write to",
+        "id" : "56",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Call notifications if success update profile",
+        "id" : "59",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Send push notifications",
+        "id" : "253",
+        "order" : "6",
+        "response" : false
+      } ],
+      "title" : "[Mobile][Manage Profile] Profile"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Patient can health search services available on medpoint",
+      "dimensions" : {
+        "height" : 991,
+        "width" : 3820
+      },
+      "elementId" : "154",
+      "elements" : [ {
+        "id" : "10",
+        "x" : 3150,
+        "y" : 202
+      }, {
+        "id" : "65",
+        "x" : 2400,
+        "y" : 202
+      }, {
+        "id" : "111",
+        "x" : 1650,
+        "y" : 202
+      }, {
+        "id" : "176",
+        "x" : 900,
+        "y" : 202
+      }, {
+        "id" : "217",
+        "x" : 200,
+        "y" : 152
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-003",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "223",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "177",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Get health services or Search health services by keyword",
+        "id" : "112",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Reads data services",
+        "id" : "66",
+        "order" : "4",
+        "response" : false
+      } ],
+      "title" : "[Mobile][Services] Search Health Services"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Patient can create reservation on medpoint",
+      "dimensions" : {
+        "height" : 1861,
+        "width" : 3820
+      },
+      "elementId" : "154",
+      "elements" : [ {
+        "id" : "3",
+        "x" : 2470,
+        "y" : 771
+      }, {
+        "id" : "9",
+        "x" : 2470,
+        "y" : 171
+      }, {
+        "id" : "60",
+        "x" : 1720,
+        "y" : 771
+      }, {
+        "id" : "107",
+        "x" : 970,
+        "y" : 771
+      }, {
+        "id" : "172",
+        "x" : 220,
+        "y" : 1071
+      }, {
+        "id" : "217",
+        "x" : 3220,
+        "y" : 1025
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-004",
+      "order" : 4,
+      "relationships" : [ {
+        "id" : "224",
+        "order" : "1",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2274,
+          "y" : 1250
+        }, {
+          "x" : 866,
+          "y" : 1250
+        } ]
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "173",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Create reservation",
+        "id" : "108",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Reads from and Writes to, if payments is failed/cancelled or reservation is cancelled rollback",
+        "id" : "61",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "63",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Send push notifications",
+        "id" : "253",
+        "order" : "6",
+        "response" : false
+      } ],
+      "title" : "[Mobile][Reservation] Reservation"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Patient can make payment on medpoint",
+      "dimensions" : {
+        "height" : 2870,
+        "width" : 3140
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "2",
+        "x" : 1720,
+        "y" : 1372
+      }, {
+        "id" : "3",
+        "x" : 1720,
+        "y" : 1972
+      }, {
+        "id" : "11",
+        "x" : 2470,
+        "y" : 772
+      }, {
+        "id" : "41",
+        "x" : 970,
+        "y" : 772
+      }, {
+        "id" : "69",
+        "x" : 1720,
+        "y" : 772
+      }, {
+        "id" : "91",
+        "x" : 970,
+        "y" : 172
+      }, {
+        "id" : "160",
+        "x" : 220,
+        "y" : 1522
+      }, {
+        "id" : "217",
+        "x" : 2495,
+        "y" : 2222
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-005",
+      "order" : 5,
+      "relationships" : [ {
+        "id" : "225",
+        "order" : "1",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1720,
+          "y" : 2422
+        } ]
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "161",
+        "order" : "2",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 866,
+          "y" : 593
+        } ]
+      }, {
+        "id" : "92",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Reads from and Writes to",
+        "id" : "70",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Make payments",
+        "id" : "95",
+        "order" : "5",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1195,
+          "y" : 522
+        }, {
+          "x" : 1195,
+          "y" : 722
+        } ]
+      }, {
+        "description" : "Make payments to external and get payments status",
+        "id" : "45",
+        "order" : "6",
+        "response" : false
+      }, {
+        "description" : "Update status transaction",
+        "id" : "73",
+        "order" : "7",
+        "response" : true
+      }, {
+        "description" : "Call notification if success/failed payments",
+        "id" : "48",
+        "order" : "8",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1720,
+          "y" : 1822
+        } ]
+      }, {
+        "id" : "253",
+        "order" : "9",
+        "response" : false
+      } ],
+      "title" : "[Mobile][Payment] Payment"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Super Admin, Admin, and Doctor could login into Web CMS app using email/password",
+      "dimensions" : {
+        "height" : 2200,
+        "width" : 3820
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "12",
+        "x" : 3150,
+        "y" : 1202
+      }, {
+        "id" : "26",
+        "x" : 2400,
+        "y" : 602
+      }, {
+        "id" : "76",
+        "x" : 2400,
+        "y" : 1202
+      }, {
+        "id" : "121",
+        "x" : 1650,
+        "y" : 902
+      }, {
+        "id" : "194",
+        "x" : 900,
+        "y" : 902
+      }, {
+        "id" : "226",
+        "x" : 200,
+        "y" : 152
+      }, {
+        "id" : "237",
+        "x" : 200,
+        "y" : 852
+      }, {
+        "id" : "248",
+        "x" : 200,
+        "y" : 1552
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-006",
+      "order" : 6,
+      "relationships" : [ {
+        "id" : "227",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "238",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "249",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Login with email/password",
+        "id" : "195",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Check login user if exist",
+        "id" : "126",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Get user",
+        "id" : "77",
+        "order" : "6",
+        "response" : false
+      }, {
+        "description" : "Login with email/password",
+        "id" : "122",
+        "order" : "7",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][Auth] Login"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Admin can manage user's data CRUD and access rights",
+      "dimensions" : {
+        "height" : 1500,
+        "width" : 3820
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "12",
+        "x" : 3150,
+        "y" : 552
+      }, {
+        "id" : "76",
+        "x" : 2400,
+        "y" : 552
+      }, {
+        "id" : "151",
+        "x" : 1650,
+        "y" : 552
+      }, {
+        "id" : "214",
+        "x" : 900,
+        "y" : 552
+      }, {
+        "id" : "226",
+        "x" : 200,
+        "y" : 152
+      }, {
+        "id" : "237",
+        "x" : 200,
+        "y" : 852
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-007",
+      "order" : 7,
+      "relationships" : [ {
+        "description" : "Admin can manage all user's data CRUD and access rights",
+        "id" : "230",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Admin can manage user's(patient) data",
+        "id" : "241",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "215",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Mange user's data",
+        "id" : "152",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Reads from and writes to",
+        "id" : "77",
+        "order" : "5",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][User Management] User Management"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Super Admin can see list doctor and manage CRUD Data Doctor",
+      "dimensions" : {
+        "height" : 841,
+        "width" : 3820
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "12",
+        "x" : 3150,
+        "y" : 202
+      }, {
+        "id" : "76",
+        "x" : 2400,
+        "y" : 202
+      }, {
+        "id" : "151",
+        "x" : 1650,
+        "y" : 202
+      }, {
+        "id" : "186",
+        "x" : 900,
+        "y" : 202
+      }, {
+        "id" : "226",
+        "x" : 200,
+        "y" : 152
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-008",
+      "order" : 8,
+      "relationships" : [ {
+        "description" : "Super Admin can see the list of Doctor data and can manage it",
+        "id" : "231",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "187",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Retrieving data doctor and manage CRUD data doctor",
+        "id" : "152",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Reads from and Writes to",
+        "id" : "77",
+        "order" : "4",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][Data Doctor] Doctor"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Admin and Super Admin can manage Address Data Master on medpoint",
+      "dimensions" : {
+        "height" : 1500,
+        "width" : 3820
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "6",
+        "x" : 3150,
+        "y" : 552
+      }, {
+        "id" : "32",
+        "x" : 2400,
+        "y" : 552
+      }, {
+        "id" : "116",
+        "x" : 1650,
+        "y" : 552
+      }, {
+        "id" : "181",
+        "x" : 900,
+        "y" : 552
+      }, {
+        "id" : "226",
+        "x" : 200,
+        "y" : 152
+      }, {
+        "id" : "237",
+        "x" : 200,
+        "y" : 852
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-009",
+      "order" : 9,
+      "relationships" : [ {
+        "id" : "246",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "236",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "182",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "117",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Reads from and Writes to",
+        "id" : "33",
+        "order" : "5",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][Data Master] Address"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Admin and Super Admin can manage faskes on medpoint",
+      "dimensions" : {
+        "height" : 1500,
+        "width" : 3820
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "7",
+        "x" : 3150,
+        "y" : 552
+      }, {
+        "id" : "37",
+        "x" : 2400,
+        "y" : 552
+      }, {
+        "id" : "129",
+        "x" : 1650,
+        "y" : 552
+      }, {
+        "id" : "190",
+        "x" : 900,
+        "y" : 552
+      }, {
+        "id" : "226",
+        "x" : 200,
+        "y" : 152
+      }, {
+        "id" : "237",
+        "x" : 200,
+        "y" : 852
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-010",
+      "order" : 10,
+      "relationships" : [ {
+        "id" : "243",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "233",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "191",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "130",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Reads from and Writes to",
+        "id" : "38",
+        "order" : "5",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][Data Master] Faskes"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Admin and Super Admin can manage Poli Data Master on medpoint",
+      "dimensions" : {
+        "height" : 1500,
+        "width" : 3820
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "8",
+        "x" : 3150,
+        "y" : 552
+      }, {
+        "id" : "51",
+        "x" : 2400,
+        "y" : 552
+      }, {
+        "id" : "139",
+        "x" : 1650,
+        "y" : 552
+      }, {
+        "id" : "202",
+        "x" : 900,
+        "y" : 552
+      }, {
+        "id" : "226",
+        "x" : 200,
+        "y" : 152
+      }, {
+        "id" : "237",
+        "x" : 200,
+        "y" : 852
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-011",
+      "order" : 11,
+      "relationships" : [ {
+        "id" : "244",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "234",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "203",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "140",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Reads from and Writes to",
+        "id" : "52",
+        "order" : "5",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][Data Master] Poli"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Admin and Super Admin can manage Poli Data Master on medpoint",
+      "dimensions" : {
+        "height" : 1500,
+        "width" : 3820
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "10",
+        "x" : 3150,
+        "y" : 552
+      }, {
+        "id" : "65",
+        "x" : 2400,
+        "y" : 552
+      }, {
+        "id" : "147",
+        "x" : 1650,
+        "y" : 552
+      }, {
+        "id" : "210",
+        "x" : 900,
+        "y" : 552
+      }, {
+        "id" : "226",
+        "x" : 200,
+        "y" : 152
+      }, {
+        "id" : "237",
+        "x" : 200,
+        "y" : 852
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-012",
+      "order" : 12,
+      "relationships" : [ {
+        "id" : "245",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "235",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "211",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "148",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Reads from and Writes to",
+        "id" : "66",
+        "order" : "5",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][Data Master] Services"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Admin can manage reservation on medpoint",
+      "dimensions" : {
+        "height" : 2200,
+        "width" : 3820
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "9",
+        "x" : 3150,
+        "y" : 902
+      }, {
+        "id" : "60",
+        "x" : 2400,
+        "y" : 902
+      }, {
+        "id" : "143",
+        "x" : 1650,
+        "y" : 902
+      }, {
+        "id" : "206",
+        "x" : 900,
+        "y" : 902
+      }, {
+        "id" : "226",
+        "x" : 200,
+        "y" : 152
+      }, {
+        "id" : "237",
+        "x" : 200,
+        "y" : 852
+      }, {
+        "id" : "248",
+        "x" : 200,
+        "y" : 1552
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-013",
+      "order" : 13,
+      "relationships" : [ {
+        "id" : "242",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "232",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "252",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "207",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "144",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Reads from and Writes to",
+        "id" : "61",
+        "order" : "6",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][Reservation] Reservation"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Admin can see billing and payment validation on medpoint",
+      "dimensions" : {
+        "height" : 2870,
+        "width" : 3140
+      },
+      "elementId" : "180",
+      "elements" : [ {
+        "id" : "2",
+        "x" : 1720,
+        "y" : 1372
+      }, {
+        "id" : "3",
+        "x" : 1720,
+        "y" : 1972
+      }, {
+        "id" : "11",
+        "x" : 2470,
+        "y" : 772
+      }, {
+        "id" : "41",
+        "x" : 970,
+        "y" : 772
+      }, {
+        "id" : "69",
+        "x" : 1720,
+        "y" : 772
+      }, {
+        "id" : "133",
+        "x" : 970,
+        "y" : 172
+      }, {
+        "id" : "198",
+        "x" : 220,
+        "y" : 1522
+      }, {
+        "id" : "237",
+        "x" : 2495,
+        "y" : 2222
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-014",
+      "order" : 14,
+      "relationships" : [ {
+        "id" : "247",
+        "order" : "1",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1720,
+          "y" : 2422
+        } ]
+      }, {
+        "description" : "Makes API call to [JSON/HTTPS]",
+        "id" : "199",
+        "order" : "2",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 866,
+          "y" : 593
+        } ]
+      }, {
+        "id" : "137",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Reads from and Write to",
+        "id" : "70",
+        "order" : "4",
+        "response" : false
+      }, {
+        "id" : "134",
+        "order" : "5",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1195,
+          "y" : 522
+        }, {
+          "x" : 1195,
+          "y" : 722
+        } ]
+      }, {
+        "description" : "Get payment status",
+        "id" : "45",
+        "order" : "6",
+        "response" : false
+      }, {
+        "description" : "Update status payment in transaction",
+        "id" : "73",
+        "order" : "7",
+        "response" : true
+      }, {
+        "description" : "Call notification if success/failed Update status payment",
+        "id" : "48",
+        "order" : "8",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1720,
+          "y" : 1822
+        } ]
+      }, {
+        "id" : "255",
+        "order" : "9",
+        "response" : false
+      } ],
+      "title" : "[Web CMS][Payment] Payment"
+    } ],
+    "systemContextViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 4334,
+        "width" : 2300
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 950,
+        "y" : 165
+      }, {
+        "id" : "2",
+        "x" : 950,
+        "y" : 3799
+      }, {
+        "id" : "3",
+        "x" : 950,
+        "y" : 1982
+      }, {
+        "id" : "4",
+        "x" : 200,
+        "y" : 1982
+      }, {
+        "id" : "217",
+        "x" : 1700,
+        "y" : 740
+      }, {
+        "id" : "226",
+        "x" : 1700,
+        "y" : 1461
+      }, {
+        "id" : "237",
+        "x" : 1700,
+        "y" : 2203
+      }, {
+        "id" : "248",
+        "x" : 1700,
+        "y" : 2982
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "generatedKey" : true,
+      "key" : "SystemContext-001",
+      "order" : 15,
+      "relationships" : [ {
+        "id" : "21",
+        "vertices" : [ {
+          "x" : 950,
+          "y" : 690
+        } ]
+      }, {
+        "id" : "220",
+        "vertices" : [ {
+          "x" : 950,
+          "y" : 1565
+        } ]
+      }, {
+        "id" : "229",
+        "vertices" : [ {
+          "x" : 950,
+          "y" : 1832
+        } ]
+      }, {
+        "id" : "240",
+        "vertices" : [ {
+          "x" : 1400,
+          "y" : 2432
+        }, {
+          "x" : 950,
+          "y" : 2432
+        } ]
+      }, {
+        "id" : "251",
+        "vertices" : [ {
+          "x" : 950,
+          "y" : 2507
+        } ]
+      }, {
+        "id" : "253"
+      }, {
+        "id" : "254"
+      }, {
+        "id" : "255"
+      }, {
+        "id" : "256"
+      }, {
+        "id" : "47",
+        "vertices" : [ {
+          "x" : 950,
+          "y" : 3574
+        } ]
+      }, {
+        "id" : "50"
+      } ],
+      "softwareSystemId" : "4"
+    } ]
+  }
+}

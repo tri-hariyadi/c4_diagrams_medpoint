@@ -48,3 +48,9 @@
    ![image](preview/web_reservation.png)
 9. [Web CMS][Payment] Payment
    ![image](preview/web_payment.png)
+
+## Code Diagram (C4)
+1. [Login]
+   ![image](preview/login_c4.png)
+2. [Reservation]
+   ![image](preview/reservation_c4.png)

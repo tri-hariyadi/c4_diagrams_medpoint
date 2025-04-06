@@ -1,0 +1,59 @@
+<mxfile host="drawio-plugin" modified="2025-04-06T22:33:13.244Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" version="22.1.22" etag="I4t0MNa-R-ttzZNCMTgt" type="embed">
+  <diagram id="ZkyJSkqubOCArimxdTVv" name="Page-1">
+    <mxGraphModel dx="1179" dy="942" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="15" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="197.5" y="110" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="15" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="212" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="submitLoginRequest()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="210" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="17" parent="1" target="19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="215" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="loginController()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="136.25" y="350" width="152.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="19" parent="1" target="21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="verifyCredential(email: string, password: string)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="21" parent="1" target="23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" value="generateJWT()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="490" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="23" parent="1" target="25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="470" y="640" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="start" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="182.5" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="end" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="455" y="680" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

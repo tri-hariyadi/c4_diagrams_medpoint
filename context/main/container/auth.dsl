@@ -14,12 +14,12 @@ cAuth = container "Supabase Auth service" {
   }
 }
 
-cAuthInternal = container "Supabase Auth service internal" {
-  description "Backend to handle authn/authz"
-  technology "Supabase"
-
-  comAuthEmailLoginInternal = component "Auth Email Login Internal" {
-    description "Handle /login/email"
-    -> comDatabaseUserTable "Check if user's email exists"
-  }
-}
+//cAuthInternal = container "Supabase Auth service internal" {
+//  description "Backend to handle authn/authz"
+//  technology "Supabase"
+//
+//  comAuthEmailLoginInternal = component "Auth Email Login Internal" {
+//    description "Handle /login/email"
+//    -> comDatabaseUserTable "Check if user's email exists"
+//  }
+//}

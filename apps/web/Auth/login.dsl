@@ -10,7 +10,8 @@ dynamic cWeb {
     comBffWebAuth -> comRestUser "Check login user if exist"
     comRestUser -> comDatabaseUserTable "Get user"
 
-    comBffWebAuth -> comAuthEmailLoginInternal "Login with email/password"
+    comBffWebAuth -> comAuthEmailLogin "Login with email/password"
+    comAuthEmailLogin -> ssExternalAuth "Login using external auth with email/password"
 
     autolayout lr
 }

@@ -52,5 +52,7 @@
 ## Code Diagram (C4)
 1. [Login]
    ![image](preview/login_c4.png)
-2. [Reservation]
-   ![image](preview/reservation_c4.png)
+2. [Register Flutter]
+   ![image](preview/register_flutter_c4.png)
+3. [Reservation]
+   ![image](preview/reservation_flutter_c4.png)
